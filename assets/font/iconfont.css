@@ -1,0 +1,27 @@
+
+.iconfont {
+  font-family:iconfont !important;
+}
+
+.icon-search:before { content: "&#xe65c;"; }
+
+.icon-unfold:before { content: "&#xe661;"; }
+
+.icon-scan:before { content: "&#xe689;"; }
+
+.icon-notice:before { content: "&#xe70a;"; }
+
+.icon-home:before { content: "&#xe660;"; }
+
+.icon-tea:before { content: "&#xe744;"; }
+
+.icon-right:before { content: "&#xe63a;"; }
+
+.icon-shop:before { content: "&#xe61a;"; }
+
+.icon-i:before { content: "&#xe639;"; }
+
+.icon-right1:before { content: "&#xe74b;"; }
+
+.icon-class:before { content: "&#xe605;"; }
+

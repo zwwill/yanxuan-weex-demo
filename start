@@ -1,0 +1,14 @@
+echo "*****************************************************************************"
+echo "*                             Welcome to Weex                               *"
+echo "*                                                                           *"
+echo "*             A framework for building Mobile cross-platform UI.            *"
+echo "*                                                                           *"
+echo "*                      https://github.com/alibaba/weex                      *"
+echo "*****************************************************************************"
+
+
+    THIS_DIR=$(dirname "$0")
+    pushd "$THIS_DIR"
+    npm run serve
+    popd
+

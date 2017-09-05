@@ -1,0 +1,9 @@
+{
+   "AppName":"YanXuanWeexApp",
+   "Version":"0.1",
+   "BuildVersion":"0.1.0",
+   "AppId":"",
+   "CodeSign":"",
+   "Profile":"",
+   "WeexBundle":"index.js"
+}

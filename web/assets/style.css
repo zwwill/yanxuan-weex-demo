@@ -1,0 +1,11 @@
+h1 { text-align: center; }
+#app { display: flex; justify-content: center; }
+#preview { width: 750px; height: 1245px; transform: scale(0.354); transform-origin: top left; }
+.mock-phone { position: relative; width: 297px; min-width: 297px; height: 591px; border: 2px solid #0088fb; border-radius: 30px; }
+.mock-phone .inner { position: absolute; top: 60px; z-index: 26; left: 12px; width: 267px; height: 441px; border: 1px solid #0088fb; overflow: hidden; }
+.mock-phone .inner iframe { width: 100%; height: 100%; margin: 0; }
+.mock-phone  .camera { position: absolute; width: 14px; height: 14px; border-radius: 14px; background: #afddff; border: 1px solid #0088fb; top: 23px; left: 94px; }
+.mock-phone  .earpiece { position: absolute; width: 70px; height: 8px; border-radius: 8px; background: #afddff; border: 1px solid #0088fb; top: 26px; left: 124px; }
+.mock-phone .home-btn { position: absolute; width: 56px; height: 56px; border-radius: 56px; background: #afddff; border: 1px solid #0088fb; bottom: 14px; left: 50%; margin-left: -28px; }
+#qrcode { align-self: center; margin-left: 50px; }
+#qrcode .bundle-url { width: 480px; line-height: 1.5; word-break: break-all; }
