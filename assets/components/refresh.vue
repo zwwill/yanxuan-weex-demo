@@ -43,18 +43,6 @@
         left: 87px;
         color:#666;
     }
-    .box{margin-top:50px;width:100px;height:70px;transform-style:preserve-3d; transform:rotateX(-10deg) scale(0.7) ;perspective:300px;}
-    .t{position:absolute;width:100px;height:70px;background-color:#e6d7c9;}
-
-    .top-1{ height:100px;transform:rotateX(90deg) rotateY(20deg);left:-50px; background: none; }
-    .g1{width: 50%;height: 100%;background:#e6d7c9;}
-    .top-2{ height:100px;transform:rotateX(90deg) rotateY(160deg);left:50px; background: none;}
-    .bottom{ height:100px;transform:rotateX(-90deg) translateZ(70px);background-color: #dbc8b8;}
-    .left{transform:rotateY(-90deg) translateZ(50px) translateY(50px);background-color: #dbc8b8;}
-    .right{transform:rotateY(90deg) translateZ(50px) translateY(50px);background-color: #dbc8b8;}
-    .back{transform:rotateY(180deg) translateZ(50px) translateY(50px); background-color: #cdb69e;}
-    .front{transform:translateZ(50px) translateY(50px);}
-    .box-txt{text-align:center;line-height:70px;font-size:30px;font-family: "楷体","楷体_GB2312";color:#a49a6f;}
 
 </style>
 <script>
@@ -88,6 +76,9 @@
                 for(var i=0;i<this.loadingAR.length;i++){
                     this.shake(this.$refs[this.loadingAR[i].ref],0,0,0,0,200);
                 }
+                this.$emit('loadingDown',{
+                    status : 'loadingDown'
+                })
             },
             shake(_ref,_x,_y,_k,_d,_duration,_delay){
                 animation.transition(_ref, {
