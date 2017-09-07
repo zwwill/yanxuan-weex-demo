@@ -24,6 +24,9 @@
             <div class="cell-button">
                 <block-3 :goods="goods3"></block-3>
             </div>
+            <loading class="loading" @loading="onloading" :display="showLoading">
+                <text class="indicator">...</text>
+            </loading>
         </scroller>
     </div>
 </template>
@@ -64,6 +67,7 @@
 </style>
 
 <script>
+    var modal = weex.requireModule('modal')
     var navigator = weex.requireModule('navigator')
     import util from '../../src/assets/util';
     import Header from '../components/Header.vue';
@@ -168,7 +172,8 @@
                     { tlt:"欧式哑光餐具套装",img:"http://yanxuan.nosdn.127.net/431e86c88b4a6c9f065d1d8abea6b603.png?imageView&quality=85&thumbnail=330x330",info:"德化白瓷，坚实耐用",price:"189"},
                     { tlt:"清新两用杯",img:"http://yanxuan.nosdn.127.net/431f5d142e3dd9946dc8e38c2aa3cd34.png?imageView&quality=85&thumbnail=330x330",info:"办公杯优选 轻松饮茶",price:"52"},
                     { tlt:"两带式男/女款拖鞋",img:"http://yanxuan.nosdn.127.net/7d1c130c7d80edf824e4218c6829b7c8.png?imageView&quality=85&thumbnail=330x330",info:"鞋杯随脚型而变，舒适呵护",price:"69.9"}
-                ]
+                ],
+                showLoading: 'hide'
             }
         },
 
@@ -179,6 +184,14 @@
                     url: util.setBundleUrl(url, 'page/web.js?weburl='+_url) ,
                     animated: "true"
                 });
+            },
+            onloading () {
+                modal.toast({ message: 'loading', duration: 0.3 })
+                this.showLoading = 'show';
+                setTimeout(() => {
+                    this.goods3.push(...this.goods1);
+                    this.showLoading = 'hide'
+                }, 600)
             }
         }
     }
