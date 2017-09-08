@@ -4,7 +4,7 @@
             <text class="ic iconfont">&#xe689;</text>
             <text class="txt">扫一扫</text>
         </div>
-        <text class="search iconfont">&#xe65c; 搜索商品，共8888款好物</text>
+        <text class="search iconfont"  @click="jumpWeb()">&#xe65c; 搜索商品，共8888款好物</text>
         <div class="notice">
             <text class="ic iconfont">&#xe70a;</text>
             <text class="txt">消息</text>
@@ -55,6 +55,8 @@
     }
 </style>
 <script>
+    var navigator = weex.requireModule('navigator')
+    import util from '../../src/assets/util';
     export default {
         data () {
             return {
@@ -63,6 +65,14 @@
         created () {
         },
         methods: {
+            jumpWeb (_url) {
+                if(!_url) _url = 'http://m.you.163.com/search';
+                const url = this.$getConfig().bundleUrl;
+                navigator.push({
+                    url: util.setBundleUrl(url, 'page/web.js?weburl='+_url) ,
+                    animated: "false"
+                });
+            }
         }
     }
 </script>
