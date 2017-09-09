@@ -12,7 +12,7 @@
   "keywords": [
     "weex"
   ],
-  "author": "ZhangWei",
+  "author": "zwwill",
   "license": "MIT",
   "dependencies": {
     "vue": "^2.4.2",
