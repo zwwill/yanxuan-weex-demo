@@ -34,7 +34,8 @@ $ weexpack platform add ios
 ```
 $ weex build ios
 ```
-此步骤只为了打包，并不用完全执行，详介请见[https://segmentfault.com/a/1190000010984857](https://segmentfault.com/a/1190000010984857)
+此步骤只为了打包，并不用完全执行，详介请见[https://segmentfault.com/a/1190000010984857](https://segmentfault.com/a/1190000010984857#articleHeader14)
+
 接下来使用xcode安装调试
 
 ## 运行android
