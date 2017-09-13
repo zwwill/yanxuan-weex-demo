@@ -30,6 +30,6 @@ lauch.json
 #nei
 /mock/
 /plugins/*
-/platforms/*
+/platforms/android
 /dist/
 /temp/
