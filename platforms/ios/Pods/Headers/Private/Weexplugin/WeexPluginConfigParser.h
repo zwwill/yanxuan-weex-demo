@@ -1,0 +1,1 @@
+../../../../Weexplugin/Weexplugin/Source/WeexPlugin/WeexPluginConfigParser.h
