@@ -33,3 +33,4 @@ lauch.json
 /platforms/android
 /dist/
 /temp/
+/package-lock.json
