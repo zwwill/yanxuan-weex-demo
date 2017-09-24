@@ -31,7 +31,6 @@ lauch.json
 /mock/
 /plugins/*
 /platforms/android
-/platforms/ios
 /dist/
 /temp/
 /package-lock.json
