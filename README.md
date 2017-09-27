@@ -5,6 +5,13 @@
 > 以下是运行demo的简要步骤
 > 关于此Demo的进一步介绍，可以阅读此文[网易严选App感受WEEX开发](https://segmentfault.com/a/1190000011027225)
 
+
+# 体验
+
+Weex Playground 扫码体验 [Weex Playground下载地址](http://weex.apache.org/cn/playground.html)
+
+![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/erHome.png)
+
 # 运行
 ## 安装依赖包
 
@@ -47,3 +54,4 @@ $ weexpack platform add android
 ```
 $ weex run android
 ```
+
