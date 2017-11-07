@@ -80,22 +80,19 @@ const webConfig = {
       {
         test: /\.js$/,
         use: [{
-          loader: 'babel-loader',
-            options: {
-                presets: ['es2015']
-            }
+          loader: 'babel-loader'
         }],
         exclude: /node_modules/
       },
-      {
-          test: /\.css$/,
-          use: [{
-              loader: 'css-loader'
-          }]
-      },
-      {
-        test: /\.vue(\?[^?]+)?$/,
+      {    
+        test: /\.css$/,
         use: [{
+            loader: 'css-loader'
+        }]
+    },
+    {        
+      test: /\.vue(\?[^?]+)?$/,
+      use: [{
           loader: 'vue-loader'
         }]
       }
@@ -115,9 +112,6 @@ const weexConfig = {
         test: /\.js$/,
         use: [{
           loader: 'babel-loader',
-            options: {
-                presets: ['es2015']
-            }
         }],
         exclude: /node_modules/
       },
