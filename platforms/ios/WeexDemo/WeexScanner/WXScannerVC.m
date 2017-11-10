@@ -202,7 +202,7 @@
                 WXDemoViewController * vc = (WXDemoViewController*)[[self.navigationController viewControllers] objectAtIndex:0];
                 [self.navigationController popToViewController:vc animated:NO];
             }
-            
+
             return YES;
         }
     }
