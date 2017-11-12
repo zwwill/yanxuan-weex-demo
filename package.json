@@ -16,6 +16,7 @@
   "author": "zwwill",
   "license": "MIT",
   "dependencies": {
+    "ip": "^1.1.5",
     "vue": "2.5.3",
     "vue-router": "2.7.0",
     "vuex": "2.1.1",
@@ -37,7 +38,6 @@
     "html-webpack-plugin": "2.30.1",
     "raw-loader": "0.5.1",
     "script-ext-html-webpack-plugin": "1.8.8",
-    "quick-local-ip": "1.0.7",
     "vue-loader": "13.0.4",
     "vue-template-compiler": "2.5.3",
     "webpack": "2.7.0",
