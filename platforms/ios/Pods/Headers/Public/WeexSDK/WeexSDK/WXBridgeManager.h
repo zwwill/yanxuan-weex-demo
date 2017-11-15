@@ -1,1 +1,0 @@
-../../../../WeexSDK/WeexSDK.framework/Headers/WXBridgeManager.h
