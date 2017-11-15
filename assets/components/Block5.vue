@@ -115,7 +115,7 @@
                 if(!_url) _url = 'http://m.you.163.com/topic/v1/pub/XLymbwEO0J.html';
                 const url = this.$getConfig().bundleUrl;
                 navigator.push({
-                    url: util.setBundleUrl(url, 'page/web.js?weburl='+_url) ,
+                    url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
                     animated: "true"
                 });
             }

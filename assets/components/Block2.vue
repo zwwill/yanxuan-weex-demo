@@ -142,7 +142,7 @@
                 if(!_url) return;
                 const url = this.$getConfig().bundleUrl;
                 navigator.push({
-                    url: util.setBundleUrl(url, 'page/web.js?weburl='+_url) ,
+                    url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
                     animated: "true"
                 });
             }

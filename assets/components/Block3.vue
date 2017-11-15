@@ -97,7 +97,7 @@
                 if(!_url) _url = 'http%3A%2F%2Fm.you.163.com%2Fitem%2Fdetail%3Fid%3D1009024%23%2F%3F_k%3Dfakdg7';
                 const url = this.$getConfig().bundleUrl;
                 navigator.push({
-                    url: util.setBundleUrl(url, 'page/web.js?weburl='+_url) ,
+                    url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
                     animated: "true"
                 });
             }

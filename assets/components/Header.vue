@@ -69,7 +69,7 @@
                 if(!_url) _url = 'http://m.you.163.com/search';
                 const url = this.$getConfig().bundleUrl;
                 navigator.push({
-                    url: util.setBundleUrl(url, 'page/web.js?weburl='+_url) ,
+                    url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
                     animated: "false"
                 });
             }
