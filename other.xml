@@ -1,7 +1,0 @@
-<application>
-  <component name="NodeJsLocalInterpreters">
-    <local-interpreter path="/usr/local/bin/node">
-      <npm-package value="/usr/local/lib/node_modules/npm" />
-    </local-interpreter>
-  </component>
-</application>
