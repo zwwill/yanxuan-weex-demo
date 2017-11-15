@@ -1,0 +1,8 @@
+<application>
+  <component name="GeneralSettings">
+    <option name="showTipsOnStartup" value="false" />
+  </component>
+  <component name="Registry">
+    <entry key="dumb.aware.run.configurations" value="true" />
+  </component>
+</application>
