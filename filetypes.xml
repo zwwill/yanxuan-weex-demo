@@ -4,6 +4,7 @@
       <mapping pattern="t2" type="PLAIN_TEXT" />
       <mapping pattern=".empty" type="PLAIN_TEXT" />
       <mapping pattern="t1" type="PLAIN_TEXT" />
+      <mapping ext="rgl" type="XML" />
     </extensionMap>
   </component>
 </application>
