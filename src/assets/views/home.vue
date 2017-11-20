@@ -69,7 +69,7 @@
 <script>
     var modal = weex.requireModule('modal')
     var navigator = weex.requireModule('navigator')
-    import util from '../../src/assets/util';
+    import util from '../util';
     import Header from '../components/Header.vue';
     import refresher from '../components/refresh.vue';
     import topChannel from '../components/topChannel.vue';

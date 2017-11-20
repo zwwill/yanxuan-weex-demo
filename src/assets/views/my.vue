@@ -209,7 +209,7 @@
 </style>
 
 <script>
-    import util from '../../src/assets/util';
+    import util from '../util';
     import Block1 from '../components/Block1.vue';
     import Header from '../components/Header.vue';
     var navigator = weex.requireModule('navigator')

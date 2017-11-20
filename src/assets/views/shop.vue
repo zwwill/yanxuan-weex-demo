@@ -72,7 +72,7 @@
 <script>
     import Header2 from '../components/Header2.vue';
     import Block3 from '../components/Block3.vue';
-    import util from '../../src/assets/util';
+    import util from '../util';
     import refresher from '../components/refresh.vue';
     export default {
         components: {

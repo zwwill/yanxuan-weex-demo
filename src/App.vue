@@ -29,7 +29,7 @@
 <script>
     var modal = weex.requireModule('modal');
     import util from './assets/util';
-    import tabBar from '../assets/components/tabBar.vue';
+    import tabBar from './assets/components/tabBar.vue';
     export default {
         data () {
             return {

@@ -98,7 +98,7 @@
 </style>
 
 <script>
-    import util from '../../src/assets/util';
+    import util from '../util';
     import refresher from '../components/refresh.vue';
     import Header3 from '../components/Header3.vue';
     var navigator = weex.requireModule('navigator')

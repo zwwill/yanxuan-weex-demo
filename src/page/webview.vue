@@ -17,9 +17,8 @@
     </div>
 </template>
 <script>
-    const navigator = weex.requireModule('navigator')
-    const webview = weex.requireModule('webview')
-    const modal = weex.requireModule('modal')
+    const navigator = weex.requireModule('navigator');
+    const webview = weex.requireModule('webview');
     import util from '../assets/util';
     export default {
         components: {
@@ -33,11 +32,9 @@
             util.initIconFont();
             this.url =  util.getUrlSearch(weex.config.bundleUrl,'weburl') || this.url0;
             console.log('webPageURL', this.url )
-//            modal.toast({ message: this.url });
         },
         methods: {
             back (event) {
-                modal.toast({ message: 'back' })
                 webview.goBack(this.$refs.wv)
             },
             close (event) {
@@ -46,12 +43,10 @@
                 });
             },
             reload (event) {
-                modal.toast({ message: 'reload' })
                 webview.reload(this.$refs.wv)
             },
             error (event) {
                 console.log('error', event)
-//                modal.toast({ message: 'error' })
             }
         }
     }

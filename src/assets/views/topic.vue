@@ -31,7 +31,7 @@
 </style>
 
 <script>
-    import util from '../../src/assets/util';
+    import util from '../util';
     import Header2 from '../components/Header2.vue';
     import refresher from '../components/refresh.vue';
     import Block4 from '../components/Block4.vue';
