@@ -6,8 +6,8 @@
   "scripts": {
     "build": "webpack",
     "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
-    "dev": "weex-builder src dist -w",
-    "serve": "webpack-dev-server --config webpack.dev.js -p --open"
+    "dev": "webpack --config webpack.config.js --watch",
+    "serve": "webpack-dev-server --config webpack.dev.js --progress --watch --open"
   },
   "keywords": [
     "weex"

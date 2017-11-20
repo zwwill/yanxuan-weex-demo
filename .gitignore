@@ -30,8 +30,10 @@ lauch.json
 #nei
 /mock/
 /plugins/*
-/platforms/android
+/platforms/*
 /dist/
 /temp/
-/package-lock.json
 assets/tools/
+!/platforms/README.md
+!/plugins/README.md
+

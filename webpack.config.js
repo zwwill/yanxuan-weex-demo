@@ -3,7 +3,6 @@ const fs = require('fs-extra');
 const webpack = require('webpack');
 
 const entry = {index: pathTo.resolve('src', 'entry.js')};
-const weexEntry = {index: pathTo.resolve('src', 'entry.js')};
 const vueWebTemp = 'temp';
 const hasPluginInstalled = fs.existsSync('./web/plugin.js');
 var isWin = /^win/.test(process.platform);
@@ -35,7 +34,8 @@ function walk(dir) {
       const fullpath = pathTo.join(directory, file);
       const stat = fs.statSync(fullpath);
       const extname = pathTo.extname(fullpath);
-      if (stat.isFile() && extname === '.vue' || extname === '.we') {
+      const basename = pathTo.basename(fullpath);
+      if (stat.isFile() && extname === '.vue' && basename != 'App.vue' ) {
         if (!fileType) {
           fileType = extname;
         }
@@ -49,8 +49,7 @@ function walk(dir) {
           
           entry[name] = pathTo.join(__dirname, entryFile) + '?entry=true';
         } 
-        weexEntry[name] = fullpath + '?entry=true';
-      } else if (stat.isDirectory() && file !== 'build' && file !== 'include') {
+      } else if (stat.isDirectory() && ['build','include','assets','filters','mixins'].indexOf(file) == -1 ) {
         const subdir = pathTo.join(dir, file);
         walk(subdir);
       }
@@ -67,86 +66,46 @@ const plugins = [
     exclude: 'Vue'
   })
 ];
+console.log(JSON.stringify(entry))
 const webConfig = {
-  context: pathTo.join(__dirname, ''),
-  entry: entry,
-  output: {
-    path: pathTo.join(__dirname, 'dist'),
-    filename: '[name].web.js',
-  },
-  module: {
-    // webpack 2.0 
-    rules: [
-      {
-        test: /\.js$/,
-        use: [{
-          loader: 'babel-loader',
-            options: {
-                presets: ['es2015']
+    context: pathTo.join(__dirname, ''),
+    entry: entry,
+    output: {
+        path: pathTo.join(__dirname, 'dist'),
+        filename: '[name].web.js',
+    },
+    module: {
+        // webpack 2.0
+        rules: [
+            {
+                test: /\.js$/,
+                use: [{
+                    loader: 'babel-loader',
+                    options: {
+                        presets: ['es2015']
+                    }
+                }]
+            },
+            {
+                test: /\.css$/,
+                use: [{
+                    loader: 'css-loader'
+                }]
+            },
+            {
+                test: /\.vue(\?[^?]+)?$/,
+                use: [{
+                    loader: 'vue-loader'
+                }]
             }
-        }],
-        exclude: /node_modules/
-      },
-      {
-          test: /\.css$/,
-          use: [{
-              loader: 'css-loader'
-          }]
-      },
-      {
-        test: /\.vue(\?[^?]+)?$/,
-        use: [{
-          loader: 'vue-loader'
-        }]
-      }
-    ]
-  },
-  plugins: plugins
-};
-const weexConfig = {
-  entry: weexEntry,
-  output: {
-    path: pathTo.join(__dirname, 'dist'),
-    filename: '[name].js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: [{
-          loader: 'babel-loader',
-            options: {
-                presets: ['es2015']
-            }
-        }],
-        exclude: /node_modules/
-      },
-      {
-        test: /\.vue(\?[^?]+)?$/,
-        use: [{
-          loader: 'weex-loader'
-        }]
-      },
-      {
-        test: /\.css$/,
-        use: [{
-          loader: 'css-loader'
-        }]
-      },
-      {
-        test: /\.we(\?[^?]+)?$/,
-        use: [{
-          loader: 'weex-loader'
-        }]
-      }
-    ]
-  },
-  plugins: plugins,
+        ]
+    },
+    resolve: {
+      alias: {'vue': 'vue/dist/vue.js'}
+    },
+    plugins: plugins
 };
 
-var exports = [webConfig, weexConfig];
+var exports = webConfig;
 
-if (fileType === '.we') {
-  exports = weexConfig;
-}
 module.exports = exports;

@@ -25,7 +25,7 @@
     var page = getUrlParam('page') || '/dist/index.js';
     var bundle = document.createElement('script')
     // only for web
-    bundle.src = page.replace(/\.js$/, '.web.js')
+    bundle.src = page.replace(/\.js/, '.web.js');
     document.body.appendChild(bundle)
   })();
 </script>
