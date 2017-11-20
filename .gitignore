@@ -34,3 +34,6 @@ lauch.json
 /dist/
 /temp/
 assets/tools/
+
+!/platforms/README.md
+!/plugins/README.md
