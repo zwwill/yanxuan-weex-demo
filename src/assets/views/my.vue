@@ -1,5 +1,6 @@
 <template>
     <div class="wrapper">
+        <header4></header4>
         <div class="header"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="header-bg" resize="cover" src="http://yanxuan.nosdn.127.net/6ae93353e95b3450a2710bb43f925a63.jpg"></image>
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
@@ -209,18 +210,25 @@
 </style>
 
 <script>
+    const meta = weex.requireModule('meta');
+
+    import Header4 from '../components/Header4.vue';
+
     import util from '../util';
-    import Block1 from '../components/Block1.vue';
-    import Header from '../components/Header.vue';
-    var navigator = weex.requireModule('navigator')
+    var navigator = weex.requireModule('navigator');
     export default {
         data () {
             return {
             }
         },
+
         components: {
-            'block-1': Block1,
-            'home-header': Header
+            'header4': Header4
+        },
+        created(){
+            meta.setViewport({
+                width: 1750
+            });
         },
         methods: {
 

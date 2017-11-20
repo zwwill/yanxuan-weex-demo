@@ -8,17 +8,17 @@ import ViewClass from './assets/views/class.vue'
 import ViewShop from './assets/views/shop.vue'
 import ViewMy from './assets/views/my.vue'
 
-Vue.use(Router)
+// Vue.use(Router)
 
 
 export default new Router({
     // mode: 'abstract',
     routes: [
+        { path: '/', redirect: '/home' },
         { path: '/home', component: ViewHome },
         { path: '/topic', component: ViewTopic },
         { path: '/class', component: ViewClass },
         { path: '/shop', component: ViewShop },
-        { path: '/my', component: ViewMy },
-        { path: '/', redirect: '/home' }
+        { path: '/my', component: ViewMy }
     ]
 })

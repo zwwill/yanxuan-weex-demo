@@ -7,7 +7,6 @@ import { sync } from 'vuex-router-sync'
 import * as filters from './filters'
 import mixins from './mixins'
 
-// const meta = weex.requireModule('meta');
 
 
 // sync the router with the vuex store.
@@ -22,10 +21,6 @@ Object.keys(filters).forEach(key => {
 // register global mixins.
 Vue.mixin(mixins)
 
-// 配置 viewport 的宽度为 750px
-// meta.setViewport({
-//     width: 750
-// });
 
 // create the app instance.
 // here we inject the router and store to all child components,
