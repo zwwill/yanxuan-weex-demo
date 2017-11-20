@@ -104,34 +104,34 @@ const webConfig = {
     plugins: plugins
 };
 const weexConfig = {
-  entry: weexEntry,
-  output: {
-    path: pathTo.join(__dirname, 'dist'),
-    filename: '[name].js',
-  },
-  module: {
-    rules: [
-      {
-        test: /\.js$/,
-        use: [{
-          loader: 'babel-loader',
-        }]
-      },
-      {
-        test: /\.vue(\?[^?]+)?$/,
-        use: [{
-          loader: 'weex-loader'
-        }]
-      },
-      {
-        test: /\.we(\?[^?]+)?$/,
-        use: [{
-          loader: 'weex-loader'
-        }]
-      }
-    ]
-  },
-  plugins: plugins,
+    entry: weexEntry,
+    output: {
+        path: pathTo.join(__dirname, 'dist'),
+        filename: '[name].js',
+    },
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                use: [{
+                    loader: 'babel-loader',
+                }]
+            },
+            {
+                test: /\.vue(\?[^?]+)?$/,
+                use: [{
+                    loader: 'weex-loader'
+                }]
+            },
+            {
+                test: /\.we(\?[^?]+)?$/,
+                use: [{
+                    loader: 'weex-loader'
+                }]
+            }
+        ],
+    },
+    plugins: plugins,
 };
 
 var exports = [webConfig, weexConfig];
