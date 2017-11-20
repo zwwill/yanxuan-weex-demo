@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="com.alibaba.weex" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>MyApp1</name>
+<widget id="com.alibaba.weex" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://weex.apache.org/">
+    <name>WexxApp</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        A sample Weex application that responds to the deviceready event.
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="dev@weex.apache.org" href="http://http://weex.apache.org/">
+        Weex Team
     </author>
     <content src="index.html" />
     <plugin name="cordova-plugin-whitelist" spec="1" />
