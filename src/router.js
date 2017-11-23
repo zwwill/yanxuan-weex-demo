@@ -8,7 +8,7 @@ import ViewClass from './assets/views/class.vue'
 import ViewShop from './assets/views/shop.vue'
 import ViewMy from './assets/views/my.vue'
 
-// Vue.use(Router)
+Vue.use(Router)
 
 
 export default new Router({

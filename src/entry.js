@@ -3,7 +3,7 @@
  */
 import App from './App.vue'
 import router from './router'
-import { sync } from 'vuex-router-sync'
+// import { sync } from 'vuex-router-sync'
 import * as filters from './filters'
 import mixins from './mixins'
 

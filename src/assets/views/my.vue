@@ -210,7 +210,6 @@
 </style>
 
 <script>
-    const meta = weex.requireModule('meta');
 
     import Header4 from '../components/Header4.vue';
 
@@ -226,9 +225,6 @@
             'header4': Header4
         },
         created(){
-            meta.setViewport({
-                width: 1750
-            });
         },
         methods: {
 
