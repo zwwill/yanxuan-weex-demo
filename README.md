@@ -45,15 +45,7 @@ $ weex build ios
 ```
 此步骤只为了打包，并不用完全执行，详介请见[https://segmentfault.com/a/1190000010984857](https://segmentfault.com/a/1190000010984857#articleHeader14)
 
-接下来使用xcode安装调试
+接下来使用xcode安装调试，步骤参考原生调试。
 
-## 运行android
-安装android框架
-``` 
-$ weexpack platform add android
-```
-执行运行指令
-```
-$ weex run android
-```
+（使用XCode打开 `platforms/ios/WeexDemo.xcworkspace` 文件，更改General 配置下的 Bundle Identifier 解决冲突。选择自己的Signing Team，run或debug即可）
 
