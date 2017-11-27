@@ -25,7 +25,7 @@ let utilFunc = {
             nativeBase = bundleUrl.substring(0, bundleUrl.lastIndexOf('/') + 1);
         } else {
             const matches = /\/\/([^\/]+?)\//.exec(bundleUrl);
-            const matchFirstPath = /\/\/[^\/]+\/([^\/]+)\//.exec(bundleUrl);
+            const matchFirstPath = /\/\/[^\/]+\/([^\s]+)\//.exec(bundleUrl);
             if (matches && matches.length >= 2) {
                 host = matches[1];
             }
