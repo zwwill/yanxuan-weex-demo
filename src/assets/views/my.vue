@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <header4></header4>
+        <header5></header5>
         <div class="header"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="header-bg" resize="cover" src="http://yanxuan.nosdn.127.net/6ae93353e95b3450a2710bb43f925a63.jpg"></image>
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
@@ -211,7 +211,7 @@
 
 <script>
 
-    import Header4 from '../components/Header4.vue';
+    import Header5 from '../components/Header4.vue';
 
     import util from '../util';
     var navigator = weex.requireModule('navigator');
@@ -220,9 +220,8 @@
             return {
             }
         },
-
         components: {
-            'header4': Header4
+            'header5': Header5
         },
         created(){
         },
