@@ -211,7 +211,7 @@
 
 <script>
 
-    import Header5 from '../components/Header4.vue';
+    import Header4 from '../components/Header4.vue';
 
     import util from '../util';
     var navigator = weex.requireModule('navigator');
@@ -221,7 +221,7 @@
             }
         },
         components: {
-            'header5': Header5
+            'header5': Header4
         },
         created(){
         },
