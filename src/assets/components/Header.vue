@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div :class="['wrapper', isIpx()?'w-ipx':'']" >
         <div class="scan">
             <text class="ic iconfont">&#xe689;</text>
             <text class="txt">扫一扫</text>
@@ -29,6 +29,9 @@
         z-index: 101;
         background-color: #fafafa;
         opacity: .99;
+    }
+    .w-ipx{
+        padding-top: 84px;
     }
     .scan,.notice{
         height: 80px;

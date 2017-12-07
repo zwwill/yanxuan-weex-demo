@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <header5></header5>
-        <div class="header"  @click="jumpWeb('http://m.you.163.com/ucenter')">
+        <div :class="['header', isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="header-bg" resize="cover" src="http://yanxuan.nosdn.127.net/6ae93353e95b3450a2710bb43f925a63.jpg"></image>
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
             <text class="i-name">zwwill7</text>
@@ -74,16 +74,19 @@
     .header{
         height: 280px;
     }
+    .h-ipx{
+        height: 320px;
+    }
     .header-bg{
         position: absolute;
         top:0;
         left: 0;
         right: 0;
-        height: 280px;
+        height: 320px;
     }
     .i-photo{
         position: absolute;
-        top:90px;
+        bottom:60px;
         left: 30px;
         height: 130px;
         width: 130px;
@@ -91,7 +94,7 @@
     }
     .i-name{
         position: absolute;
-        top:110px;
+        bottom:120px;
         left: 190px;
         height: 50px;
         width: 300px;
@@ -100,7 +103,7 @@
     }
     .b-tlt{
         position: absolute;
-        top:170px;
+        bottom: 70px;
         left: 190px;
         height: 40px;
         width: 350px;
@@ -136,7 +139,7 @@
     }
     .b-qrcode{
         position: absolute;
-        top:120px;
+        bottom:80px;
         right: 40px;
         height: 80px;
         width: 80px;

@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div :class="['wrapper', isIpx()?'w-ipx':'']" >
         <text class="search iconfont">&#xe65c; 搜索商品，共8888款好物</text>
     </div>
 </template>
@@ -23,6 +23,10 @@
         opacity: .99;
         border-bottom-width: 1px;
         border-bottom-color: #d9d9d9;
+    }
+    .w-ipx{
+        height: 154px;
+        padding-top: 84px;
     }
     .search {
         flex: 1;

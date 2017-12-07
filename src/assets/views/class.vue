@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div :class="['wrapper', isIpx()?'w-ipx':'']">
         <header3></header3>
         <div class="class-list">
             <scroller>
@@ -34,6 +34,12 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
+        margin-top: 40px;
+        margin-bottom: 34px;
+    }
+    .w-ipx{
+        margin-top: 40px;
+        margin-bottom: 34px;
     }
     .class-list{
         width: 162px;

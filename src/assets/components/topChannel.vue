@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div :class="['wrapper', isIpx()?'w-ipx':'']">
         <scroller class="scroller" @click="chooseChannel" scroll-direction="horizontal" flex-direction="row" loadmoreoffset="750px" show-scrollbar=false>
             <div class="j-uline" :style="jLPosition" ref="jcLine"></div>
             <text jact="true" class="i-c c-act" ref=actJC>推荐</text>
@@ -33,6 +33,9 @@
         background-color: #fafafa;
         border-bottom-width: 1px;
         border-bottom-color: #d9d9d9;
+    }
+    .w-ipx{
+        top: 154px;
     }
     .scroller{
         height: 54px;

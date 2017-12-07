@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isipx?'w-ipx':'']">
+    <div :class="['wrapper', isIpx()?'w-ipx':'']">
         <!--<div v-for="i in items">-->
             <!--<div class="bar-item" @click="tabTo(i.key)">-->
                 <!--<text class="bar-ic iconfont">{{i.icon}}</text>-->
@@ -71,34 +71,9 @@
 
     var modal = weex.requireModule('modal');
     export default {
-//        props: {
-//            indexKey: {
-//                type: String,
-//                default: 'home'
-//            },
-//            reClick: {
-//                type: Boolean,
-//                default: false
-//            },
-//            items: {
-//                type: Array,
-//                default: function(){
-//                    return [
-//                        {
-//                            icon:'&#xe660;',
-//                            name:"首页",
-//                            key:'home'
-//                        }
-//                    ]
-//                }
-//            }
-//        },
         computed:{
             testCS:function () {
                 return this.pIndexKey == 'home'?'color:#b4282d;':''
-            },
-            isipx:function () {
-                return weex.config.env.deviceModel == 'iPhone10,3';
             }
         },
         data () {

@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div :class="['wrapper', isIpx()?'w-ipx':'']">
         <div class="left">
             <text class="leftTxt" v-if="leftBtn">{{leftBtn.name}}</text>
         </div>
@@ -24,6 +24,10 @@
         justify-content: space-around;
         border-bottom-width: 1px;
         border-bottom-color: #d9d9d9;
+    }
+    .w-ipx{
+        height: 154px;
+        padding-top: 84px;
     }
     .tlt{
         flex: 1;

@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
 
-        <div class="toolbar">
+        <div :class="['toolbar', isipx?'t-ipx':'']">
             <div class="left">
                 <text class="btnTxt iconfont"  @click="back">&#xe606;</text>
                 <text class="btnTxt iconfont"  @click="close">&#xe68b;</text>
@@ -11,7 +11,7 @@
                 <text class="btnTxt iconfont" @click="reload">&#xe601;</text>
             </div>
         </div>
-        <div class="webview-box">
+        <div :class="['webview-box', isIpx()?'web-ipx':'']">
         <web ref="wv" class="webview" :src="url" @error="error"></web>
         </div>
     </div>
@@ -33,7 +33,15 @@
             this.url =  util.getUrlSearch(weex.config.bundleUrl,'weburl') || this.url0;
             console.log('webPageURL', this.url )
         },
+        computed:{
+            isipx:function () {
+                return this.isIpx();
+            }
+        },
         methods: {
+            isIpx(){
+                return weex.config.env.deviceModel == 'iPhone10,3';
+            },
             back (event) {
                 webview.goBack(this.$refs.wv)
             },
@@ -78,6 +86,10 @@
         border-bottom-width: 1px;
         border-bottom-color: #d9d9d9;
     }
+    .t-ipx{
+        height: 154px;
+        padding-top: 84px;
+    }
     .tlt{
         flex: 1;
         font-size: 36px;
@@ -115,6 +127,9 @@
         left: 0;
         right:0;
         bottom: 0;
+    }
+    .web-ipx{
+        top:154px;
     }
     .webview{
         position: absolute;
