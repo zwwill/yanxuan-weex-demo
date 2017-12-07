@@ -35,13 +35,10 @@
         },
         computed:{
             isipx:function () {
-                return this.isIpx();
+                return weex && weex.config.env.deviceModel == 'iPhone10,3';
             }
         },
         methods: {
-            isIpx(){
-                return weex.config.env.deviceModel == 'iPhone10,3';
-            },
             back (event) {
                 webview.goBack(this.$refs.wv)
             },
