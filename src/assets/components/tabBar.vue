@@ -1,5 +1,5 @@
 <template>
-    <div class="wrapper">
+    <div :class="['wrapper', isipx?'w-ipx':'']">
         <!--<div v-for="i in items">-->
             <!--<div class="bar-item" @click="tabTo(i.key)">-->
                 <!--<text class="bar-ic iconfont">{{i.icon}}</text>-->
@@ -44,6 +44,9 @@
         border-top-width: 1px;
         border-top-color: #d9d9d9;
         background-color: #fafafa;
+    }
+    .w-ipx{
+        height: 124px;
     }
     .bar-item{
         flex: 1;
@@ -93,6 +96,9 @@
         computed:{
             testCS:function () {
                 return this.pIndexKey == 'home'?'color:#b4282d;':''
+            },
+            isipx:function () {
+                return weex.config.env.deviceModel == 'iPhone10,3';
             }
         },
         data () {

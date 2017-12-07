@@ -2,7 +2,7 @@
     <div class="wrapper">
         <home-header></home-header>
         <top-channel></top-channel>
-        <scroller class="main-list" offset-accuracy="300px">
+        <scroller :class="['main-list', isipx?'ml-ipx':'']" offset-accuracy="300px">
             <refresher @loadingDown="loadingDown"></refresher>
             <div class="cell-button" @click="jumpWeb('https://m.you.163.com/act/pub/DxDpYNfbBd.html')">
                 <yx-slider :imageList="YXBanners" ></yx-slider>
@@ -44,6 +44,9 @@
         right: 0;
         /*margin-top: 167px;*/
         /*margin-bottom: 90px;*/
+    }
+    .ml-ipx{
+        bottom:124px;
     }
 
     .cell-button{
@@ -180,6 +183,11 @@
             }
         },
 
+        computed:{
+            isipx:function () {
+                return weex.config.env.deviceModel == 'iPhone10,3';
+            }
+        },
         methods: {
             jumpWeb (_url) {
                 const url = this.$getConfig().bundleUrl;
@@ -198,6 +206,7 @@
                 }, 600)
             },
             loadingDown(){
+                modal.toast({ message: weex.config.env.deviceModel, duration: 0.3 });
                 this.goods3 =[];
                 this.goods3.push(...this.goods2);
                 this.goods3.push(...this.goods1);
