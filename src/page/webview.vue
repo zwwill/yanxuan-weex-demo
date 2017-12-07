@@ -11,7 +11,7 @@
                 <text class="btnTxt iconfont" @click="reload">&#xe601;</text>
             </div>
         </div>
-        <div :class="['webview-box', isIpx()?'web-ipx':'']">
+        <div :class="['webview-box', isipx?'web-ipx':'']">
         <web ref="wv" class="webview" :src="url" @error="error"></web>
         </div>
     </div>
@@ -34,8 +34,8 @@
             console.log('webPageURL', this.url )
         },
         computed:{
-            isipx:function () {
-                return weex && weex.config.env.deviceModel == 'iPhone10,3';
+            isipx : function() {
+                return weex && weex.config.env.deviceModel === 'iPhone10,3';
             }
         },
         methods: {
