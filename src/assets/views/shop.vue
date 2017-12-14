@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']">
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']">
         <header4 title="购物车" :rightBtn="rightBtn"></header4>
         <div class="slogan">
             <text class="i-slg iconfont">&#xe63a; 30天无忧退换货</text>

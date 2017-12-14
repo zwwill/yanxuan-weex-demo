@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']" >
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']" >
         <text class="search iconfont">&#xe65c; 搜索商品，共8888款好物</text>
     </div>
 </template>

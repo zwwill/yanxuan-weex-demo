@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']">
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']">
         <div class="left">
             <text class="leftTxt" v-if="leftBtn">{{leftBtn.name}}</text>
         </div>

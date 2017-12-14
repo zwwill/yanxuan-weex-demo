@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']">
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']">
         <header3></header3>
         <div class="class-list">
             <scroller>

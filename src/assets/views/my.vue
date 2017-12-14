@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
         <header5></header5>
-        <div :class="['header', isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
+        <div :class="['header', isIpx&&isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="header-bg" resize="cover" src="http://yanxuan.nosdn.127.net/6ae93353e95b3450a2710bb43f925a63.jpg"></image>
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
             <text class="i-name">zwwill7</text>

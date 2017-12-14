@@ -2,7 +2,7 @@
     <div class="wrapper">
         <home-header></home-header>
         <top-channel></top-channel>
-        <scroller :class="['main-list', isIpx()?'ml-ipx':'']" offset-accuracy="300px">
+        <scroller :class="['main-list', isIpx&&isIpx()?'ml-ipx':'']" offset-accuracy="300px">
             <refresher @loadingDown="loadingDown"></refresher>
             <div class="cell-button" @click="jumpWeb('https://m.you.163.com/act/pub/DxDpYNfbBd.html')">
                 <yx-slider :imageList="YXBanners" ></yx-slider>

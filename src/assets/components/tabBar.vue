@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']">
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']">
         <!--<div v-for="i in items">-->
             <!--<div class="bar-item" @click="tabTo(i.key)">-->
                 <!--<text class="bar-ic iconfont">{{i.icon}}</text>-->

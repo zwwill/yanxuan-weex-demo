@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']" >
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']" >
         <div class="scan">
             <text class="ic iconfont">&#xe689;</text>
             <text class="txt">扫一扫</text>

@@ -1,5 +1,5 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']">
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']">
         <scroller class="scroller" @click="chooseChannel" scroll-direction="horizontal" flex-direction="row" loadmoreoffset="750px" show-scrollbar=false>
             <div class="j-uline" :style="jLPosition" ref="jcLine"></div>
             <text jact="true" class="i-c c-act" ref=actJC>推荐</text>

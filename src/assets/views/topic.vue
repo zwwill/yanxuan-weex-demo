@@ -1,7 +1,7 @@
 <template>
-    <div :class="['wrapper', isIpx()?'w-ipx':'']">
+    <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']">
         <header2  title="专题"></header2>
-        <scroller :class="['main-list', isIpx()?'ml-ipx':'']" offset-accuracy="300px">
+        <scroller :class="['main-list', isIpx&&isIpx()?'ml-ipx':'']" offset-accuracy="300px">
             <refresher></refresher>
             <div  class="cell-button"  @click="jumpWeb('http://m.you.163.com/topic/v1/look/list')">
             <block-4 :topics="topics"></block-4>
