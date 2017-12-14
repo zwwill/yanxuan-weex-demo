@@ -3,7 +3,7 @@
 ![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/banner.png)
 
 > 以下是运行demo的简要步骤
-> 关于此Demo的进一步介绍，可以阅读此文[网易严选App感受WEEX开发](https://segmentfault.com/a/1190000011027225)
+> 关于此Demo的进一步介绍，可以阅读此文[网易严选App感受WEEX开发](https://github.com/zwwill/blog/issues/3)
 
 
 # 体验
