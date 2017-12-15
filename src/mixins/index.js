@@ -5,7 +5,7 @@ export default {
         this.$router.push(to)
       }
     },
-      isIpx&&isIpx() {
+      isIpx() {
           return weex && (weex.config.env.deviceModel === 'iPhone10,3' || weex.config.env.deviceModel === 'iPhone10,6');
       }
   }
