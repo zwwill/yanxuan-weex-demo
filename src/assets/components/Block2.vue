@@ -10,7 +10,7 @@
             <text class="tlt tlt-hot">{{head.tlt}}</text>
             <text class="btn-all btn-hot" @click="jumpWeb(head.url)">查看全部 ></text>
         </div>
-        <scroller class="box" scroll-direction="horizontal" flex-direction="row" show-scrollbar=false>
+        <scroller class="box" scroll-direction="horizontal" show-scrollbar=false>
             <div class="i-good" v-for="i in goods">
                 <image class="gd-img" resize="cover" :src="i.img"></image>
                 <text class="gd-tlt">{{i.tlt}}</text>
