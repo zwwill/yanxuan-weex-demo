@@ -7,9 +7,7 @@
             </scroller>
         </div>
         <scroller class="main-list" offset-accuracy="300px">
-            <refresh class="refresh" display="hide">
-                <text class="indicator">Refreshing ...</text>
-            </refresh>
+            <refresher></refresher>
             <image class="ad-img" resize="cover" src="http://yanxuan.nosdn.127.net/3ebd7addcc0d101d116052a57cec2f16.png"></image>
             <text class="sub-tlt"> --- 推荐区分类 --- </text>
             <div class="sub-box">
