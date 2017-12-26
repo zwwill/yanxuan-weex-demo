@@ -32,8 +32,6 @@
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
-        margin-top: 40px;
-        margin-bottom: 34px;
     }
     .w-ipx{
         margin-top: 40px;
