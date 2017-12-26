@@ -1,6 +1,6 @@
 <template>
     <div :class="['wrapper', isIpx&&isIpx()?'w-ipx':'']">
-        <scroller class="scroller" @click="chooseChannel" scroll-direction="horizontal" flex-direction="row" loadmoreoffset="750px" show-scrollbar=false>
+        <scroller class="scroller" @click="chooseChannel" scroll-direction="horizontal" loadmoreoffset="750px" show-scrollbar=false>
             <div class="j-uline" :style="jLPosition" ref="jcLine"></div>
             <text jact="true" class="i-c c-act" ref=actJC>推荐</text>
             <text jact="true" class="i-c">限时购</text>
@@ -39,6 +39,7 @@
     }
     .scroller{
         height: 54px;
+        flex-direction: row;
     }
     .i-c{
         padding-top:10px;

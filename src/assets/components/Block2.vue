@@ -71,6 +71,7 @@
     .box{
         width: 750px;
         height: 500px;
+        flex-direction: row;
         padding-top: 30px;
         padding-bottom: 30px;
         padding-left: 15px;

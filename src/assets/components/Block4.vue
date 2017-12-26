@@ -1,6 +1,6 @@
 <template>
     <div class="wrapper">
-        <scroller class="tp-box" scroll-direction="horizontal" flex-direction="row" show-scrollbar=false>
+        <scroller class="tp-box" scroll-direction="horizontal" show-scrollbar=false>
             <div class="i-tp" v-for="i in topics">
                 <image class="tp-img" resize="cover" :src="i.img"></image>
                 <text class="tp-name">{{i.name}}</text>
@@ -19,6 +19,7 @@
     .tp-box{
         height: 200px;
         padding: 20px;
+        flex-direction: row;
     }
     .i-tp{
         width: 275px;
