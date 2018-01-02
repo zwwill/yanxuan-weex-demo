@@ -14,6 +14,8 @@ open [Weex Playground](http://weex.apache.org/cn/playground.html) , Scan the qrc
 
 ![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/erHome.png)
 
+（no optimizing separately for android）
+
 # Run
 
 ## install
