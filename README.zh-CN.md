@@ -14,7 +14,7 @@ Weex Playground 扫码体验 [Weex Playground下载地址](http://weex.apache.or
 
 ![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/erHome.png)
 
-（weex分包发布机制，所以此次仅为首页演示，另 Android 端未做优化）
+（Android 端未做单独优化）
 
 # 运行
 
