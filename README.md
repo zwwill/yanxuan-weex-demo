@@ -1,59 +1,64 @@
-# WEEX开发严选App
+English | [简体中文](https://github.com/zwwill/yanxuan-weex-demo/blob/master/README.zh-CN.md)
+
+# High quality Weex Demo
 
 ![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/banner.png)
 
-> 以下是运行demo的简要步骤
-> 关于此 Demo 的进一步介绍，可以阅读此文[网易严选App感受WEEX开发](https://github.com/zwwill/blog/issues/3)
+> The following is a brief step to run the demo
+> further introduction，you can read this [网易严选App感受WEEX开发](https://github.com/zwwill/blog/issues/3)
 
 
-# 体验
+# Try
 
-Weex Playground 扫码体验 [Weex Playground下载地址](http://weex.apache.org/cn/playground.html)
+open [Weex Playground](http://weex.apache.org/cn/playground.html) , Scan the qrcode below
 
 ![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/erHome.png)
 
-（weex分包发布机制，所以此次仅为首页演示，另 Android 端未做优化）
+# Run
 
-# 运行
-
-## 安装依赖包
+## install
 
 ```
 $ npm install
 ```
 
-## 运行web
+## run web
 
-web工程打包
+building web pro
 
 ```
 $ npm run build 
 ```
 
-构建web工程 & 启动服务
+building web pro & running service
 
 ```
 $ npm run dev & npm run serve 
 ```
 
-## 运行ios
-ios打包需要开发者帐号，如果不是付费用户就只能通过xcode调试的方式安装在自己的关联手机上（就是手机需要使用此帐号登录）或者虚拟机调试。
-以下是无开发者付费帐号的执行方法
-安装ios框架
+## run ios
+
+ios packaging requires developer accounts, f not, you can only install it on your own connected iphone through xcode debugging, or virtual machine。
+
+The following is the implementation of the non-developer account
+
+install ios platform
 
 ``` 
 $ weexpack platform add ios
 ```
 
-执行打包命令
+build weex bundles
 
 ```
 $ weex build ios
 ```
 
-此步骤只为了打包，并不用完全执行，在输入 bundle id 前取消即可。 详介请见[https://segmentfault.com/a/1190000010984857](https://segmentfault.com/a/1190000010984857#articleHeader14)
+This step is only for packaging, not fully executed, cancel before you enter the bundle id。
 
-接下来使用xcode安装调试，步骤参考原生调试。
+further info [https://segmentfault.com/a/1190000010984857](https://segmentfault.com/a/1190000010984857#articleHeader14)
 
-（使用XCode打开 `platforms/ios/WeexDemo.xcworkspace` 文件，更改General 配置下的 Bundle Identifier 解决冲突。选择自己的Signing Team，run或debug即可）
+next, use xcode to debug, refer to the native debug step.
+
+（Using XCode to open file `platforms/ios/WeexDemo.xcworkspace`, simple configurate, then run or debug）
 
