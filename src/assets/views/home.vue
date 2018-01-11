@@ -193,7 +193,7 @@
                 });
             },
             onloading () {
-                modal.toast({ message: 'loading', duration: 0.3 })
+//                modal.toast({ message: 'loading', duration: 0.3 })
                 this.showLoading = 'show';
                 setTimeout(() => {
                     this.goods3.push(...this.goods1);
