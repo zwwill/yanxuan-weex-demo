@@ -31,7 +31,7 @@
         created (_e) {
             util.initIconFont();
             this.url =  util.getUrlSearch(weex.config.bundleUrl,'weburl') || this.url0;
-            console.log('webPageURL', this.url )
+//            console.log('webPageURL', this.url )
         },
         computed:{
             isipx : function() {
@@ -40,18 +40,18 @@
         },
         methods: {
             back (event) {
-                webview.goBack(this.$refs.wv)
+                webview.goBack(this.$refs.wv);
             },
             close (event) {
                 navigator.pop({
-                    animated:"false"
+                    animated:"true"
                 });
             },
             reload (event) {
                 webview.reload(this.$refs.wv)
             },
             error (event) {
-                console.log('error', event)
+//                console.log('error', event)
             }
         }
     }
