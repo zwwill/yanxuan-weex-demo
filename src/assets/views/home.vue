@@ -194,11 +194,11 @@
             },
             onloading () {
 //                modal.toast({ message: 'loading', duration: 0.3 })
-                this.showLoading = 'show';
-                setTimeout(() => {
+//                this.showLoading = 'show';
+//                setTimeout(() => {
                     this.goods3.push(...this.goods1);
-                    this.showLoading = 'hide'
-                }, 600)
+//                    this.showLoading = 'hide'
+//                }, 300)
             },
             loadingDown(){
                 this.goods3 =[];
