@@ -1,4 +1,4 @@
-English | [简体中文](https://github.com/zwwill/yanxuan-weex-demo/blob/master/README.zh-CN.md)
+English | [简体中文](README.zh-CN.md)
 
 # :art: High quality Weex Demo
 
