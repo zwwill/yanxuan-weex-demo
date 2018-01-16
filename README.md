@@ -1,6 +1,6 @@
 English | [简体中文](https://github.com/zwwill/yanxuan-weex-demo/blob/master/README.zh-CN.md)
 
-# High quality Weex Demo
+# :art: High quality Weex Demo
 
 ![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/banner.png)
 
