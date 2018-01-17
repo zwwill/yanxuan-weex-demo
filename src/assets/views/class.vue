@@ -35,7 +35,7 @@
     }
     .w-ipx{
         margin-top: 40px;
-        margin-bottom: 34px;
+        margin-bottom: 50px;
     }
     .class-list{
         width: 162px;

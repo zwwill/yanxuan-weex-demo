@@ -31,6 +31,7 @@
         opacity: .99;
     }
     .w-ipx{
+        height: 154px;
         padding-top: 84px;
     }
     .scan,.notice{

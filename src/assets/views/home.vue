@@ -47,7 +47,7 @@
     }
     .ml-ipx{
         top: 208px;
-        bottom:124px;
+        bottom:140px;
     }
 
     .cell-button{

@@ -22,7 +22,7 @@
     }
     .w-ipx{
         margin-top: 40px;
-        margin-bottom: 34px;
+        margin-bottom: 50px;
     }
     .main-list{
         margin-top: 113px;

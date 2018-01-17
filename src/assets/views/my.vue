@@ -80,7 +80,7 @@
         margin-bottom: -1000px;
     }
     .ml-ipx{
-        margin-bottom: 124px;
+        margin-bottom: 140px;
     }
     .cell-button{
         margin-bottom: 18px;
