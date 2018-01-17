@@ -1,8 +1,11 @@
 <template>
     <div class="wrapper">
         <header5></header5>
+        <image class="header-bg" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
+        <image class="header-bg bg2" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
+        <image class="header-bg bg3" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
+        <scroller :class="['scroller',isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
         <div :class="['header', isIpx&&isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
-            <image class="header-bg" resize="cover" src="http://yanxuan.nosdn.127.net/6ae93353e95b3450a2710bb43f925a63.jpg"></image>
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
             <text class="i-name">zwwill7</text>
             <div class="b-tlt">
@@ -12,52 +15,55 @@
             </div>
             <text class="b-qrcode iconfont" >&#xe60e;</text>
         </div>
-        <div class="s-box cell-button">
-            <div class="box-tlt border-bottom"><text class="box-txt">我的订单</text><text class="i-box-in iconfont">&#xe600;</text></div>
-            <div class="box-line">
-                <div class="i-box-l">
-                    <text class="i-box-icon iconfont">&#xe673;</text>
-                    <text class="i-box-tlt">待付款</text>
+        <div class="fbs">
+            <div class="s-box cell-button">
+                <div class="box-tlt border-bottom"><text class="box-txt">我的订单</text><text class="i-box-in iconfont">&#xe600;</text></div>
+                <div class="box-line">
+                    <div class="i-box-l">
+                        <text class="i-box-icon iconfont">&#xe673;</text>
+                        <text class="i-box-tlt">待付款</text>
+                    </div>
+                    <div class="i-box-l">
+                        <text class="i-box-icon iconfont">&#xe675;</text>
+                        <text class="i-box-tlt">待发货</text>
+                    </div>
+                    <div class="i-box-l">
+                        <text class="i-box-icon iconfont">&#xe671;</text>
+                        <text class="i-box-tlt">已发货</text>
+                    </div>
+                    <div class="i-box-l">
+                        <text class="i-box-icon iconfont">&#xe672;</text>
+                        <text class="i-box-tlt">待评价</text>
+                    </div>
+                    <div class="i-box-l">
+                        <text class="i-box-icon iconfont">&#xe6ac;</text>
+                        <text class="i-box-tlt">退换/售后</text>
+                    </div>
                 </div>
-                <div class="i-box-l">
-                    <text class="i-box-icon iconfont">&#xe675;</text>
-                    <text class="i-box-tlt">待发货</text>
+            </div>
+            <div class="s-box">
+                <div class="box-tlt border-bottom"><text class="box-txt">我的服务</text></div>
+                <div class="box-line line-serve border-bottom" @click="jumpWeb('https://id.163.com/gj/m/')">
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xe658;</text><text class="i-box-tlt">拼团订单</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe61d;</text><text class="i-box-tlt">邀请好友</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xef12;</text><text class="i-box-tlt">优惠券</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe615;</text><text class="i-box-tlt">优先购</text></div>
                 </div>
-                <div class="i-box-l">
-                    <text class="i-box-icon iconfont">&#xe671;</text>
-                    <text class="i-box-tlt">已发货</text>
+                <div class="box-line line-serve border-bottom" @click="jumpWeb('https://gj.reg.163.com/faq/')">
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xe67d;</text><text class="i-box-tlt">礼品卡</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe777;</text><text class="i-box-tlt">会员</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xe69d;</text><text class="i-box-tlt">足迹</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe64c;</text><text class="i-box-tlt">收藏</text></div>
                 </div>
-                <div class="i-box-l">
-                    <text class="i-box-icon iconfont">&#xe672;</text>
-                    <text class="i-box-tlt">待评价</text>
-                </div>
-                <div class="i-box-l">
-                    <text class="i-box-icon iconfont">&#xe6ac;</text>
-                    <text class="i-box-tlt">退换/售后</text>
+                <div class="box-line line-serve" @click="jumpWeb('http%3A%2F%2Fm.you.163.com%2Fhelp%23%2F%3F_k%3Dyn4ucc')">
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe66a;</text><text class="i-box-tlt">地址</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe60a;</text><text class="i-box-tlt">客服</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe691;</text><text class="i-box-tlt">帮助</text></div>
+                    <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe68a;</text><text class="i-box-tlt">设置</text></div>
                 </div>
             </div>
         </div>
-        <div class="s-box">
-            <div class="box-tlt border-bottom"><text class="box-txt">我的服务</text></div>
-            <div class="box-line line-serve border-bottom" @click="jumpWeb('https://id.163.com/gj/m/')">
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xe658;</text><text class="i-box-tlt">拼团订单</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe61d;</text><text class="i-box-tlt">邀请好友</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xef12;</text><text class="i-box-tlt">优惠券</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe615;</text><text class="i-box-tlt">优先购</text></div>
-            </div>
-            <div class="box-line line-serve border-bottom" @click="jumpWeb('https://gj.reg.163.com/faq/')">
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xe67d;</text><text class="i-box-tlt">礼品卡</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe777;</text><text class="i-box-tlt">会员</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xe69d;</text><text class="i-box-tlt">足迹</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-yellow">&#xe64c;</text><text class="i-box-tlt">收藏</text></div>
-            </div>
-            <div class="box-line line-serve" @click="jumpWeb('http%3A%2F%2Fm.you.163.com%2Fhelp%23%2F%3F_k%3Dyn4ucc')">
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe66a;</text><text class="i-box-tlt">地址</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe60a;</text><text class="i-box-tlt">客服</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe691;</text><text class="i-box-tlt">帮助</text></div>
-                <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe68a;</text><text class="i-box-tlt">设置</text></div>
-            </div>
-        </div>
+        </scroller>
     </div>
 </template>
 <style scoped>
@@ -68,21 +74,35 @@
     .wrapper{
         background-color: #f4f4f4;
     }
+    .fbs{
+        background-color: #f4f4f4;
+        padding-bottom: 1000px;
+        margin-bottom: -1000px;
+    }
+    .ml-ipx{
+        margin-bottom: 124px;
+    }
     .cell-button{
         margin-bottom: 18px;
     }
     .header{
-        height: 280px;
+        height: 380px;
     }
     .h-ipx{
-        height: 320px;
+        height: 420px;
     }
     .header-bg{
         position: absolute;
         top:0;
         left: 0;
         right: 0;
-        height: 320px;
+        height: 500px;
+    }
+    .bg2{
+        top:500px;
+    }
+    .bg3{
+        top:1000px;
     }
     .i-photo{
         position: absolute;

@@ -1,5 +1,5 @@
 <template>
-    <slider class="slider" auto-play="true" interval="5000" @change="onchange">
+    <slider class="slider" auto-play="true" interval="5000" @change="onchange" infinite="false">
         <div class="frame" v-for="img in imageList">
             <image class="image" resize="cover" :src="img.src"></image>
         </div>
