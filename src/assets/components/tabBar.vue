@@ -46,7 +46,7 @@
         background-color: #fafafa;
     }
     .w-ipx{
-        height: 124px;
+        height: 140px;
     }
     .bar-item{
         flex: 1;
