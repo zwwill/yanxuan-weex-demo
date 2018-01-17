@@ -3,6 +3,8 @@
     <extensionMap>
       <mapping pattern="index" type="JSON" />
       <mapping pattern="pullGoods" type="JSON" />
+      <mapping pattern="subclasses" type="JSON" />
+      <mapping pattern="articles" type="JSON" />
       <mapping pattern="index.json" type="PLAIN_TEXT" />
       <mapping pattern="t2" type="PLAIN_TEXT" />
       <mapping pattern=".empty" type="PLAIN_TEXT" />
