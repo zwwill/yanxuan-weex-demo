@@ -1,6 +1,6 @@
-[English](https://github.com/zwwill/yanxuan-weex-demo/blob/master/README.md) | 简体中文
+[English](README.md) | 简体中文
 
-# 网易严选 App 感受 Weex 开发
+# :art: 网易严选 App 感受 Weex 开发
 
 ![](https://github.com/zwwill/yanxuan-weex-demo/raw/master/banner.png)
 
