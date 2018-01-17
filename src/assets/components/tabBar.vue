@@ -8,24 +8,24 @@
         <!--</div>-->
 
         <div class="bar-item" @click="tabTo('home')">
-            <text class="bar-ic iconfont" :style="testCS">&#xe660;</text>
-            <text class="bar-txt">首页</text>
+            <text class="bar-ic iconfont" :class="[this.isActive('home')]">&#xe660;</text>
+            <text class="bar-txt" :class="[this.isActive('home')]">首页</text>
         </div>
         <div class="bar-item" @click="tabTo('topic')">
-            <text class="bar-ic iconfont">&#xe744;</text>
-            <text class="bar-txt">专题</text>
+            <text class="bar-ic iconfont" :class="[this.pIndexKey == 'topic'?'bar-active':'']">&#xe744;</text>
+            <text class="bar-txt" :class="[this.pIndexKey == 'topic'?'bar-active':'']">专题</text>
         </div>
-        <div class="bar-item act" @click="tabTo('class')">
-            <text class="bar-ic iconfont">&#xe605;</text>
-            <text class="bar-txt">分类</text>
+        <div class="bar-item" @click="tabTo('class')">
+            <text class="bar-ic iconfont" :class="[this.isActive('class')]">&#xe605;</text>
+            <text class="bar-txt" :class="[this.isActive('class')]">分类</text>
         </div>
         <div class="bar-item" @click="tabTo('shop')">
-            <text class="bar-ic iconfont">&#xe61a;</text>
-            <text class="bar-txt">购物车</text>
+            <text class="bar-ic iconfont" :class="[this.isActive('shop')]">&#xe61a;</text>
+            <text class="bar-txt" :class="[this.isActive('shop')]">购物车</text>
         </div>
         <div class="bar-item" @click="tabTo('my')">
-            <text class="bar-ic iconfont">&#xe639;</text>
-            <text class="bar-txt">个人</text>
+            <text class="bar-ic iconfont" :class="[this.isActive('my')]">&#xe639;</text>
+            <text class="bar-txt" :class="[this.isActive('my')]">个人</text>
         </div>
     </div>
 </template>
@@ -72,9 +72,6 @@
     var modal = weex.requireModule('modal');
     export default {
         computed:{
-            testCS:function () {
-                return this.pIndexKey == 'home'?'color:#b4282d;':''
-            }
         },
         data () {
             return {
@@ -84,8 +81,11 @@
         mounted(){
         },
         methods: {
+            isActive:function (_c) {
+                return this.pIndexKey === _c ?'bar-active':''
+            },
             tabTo(_key){
-                if(this.pIndexKey == _key) return;
+                if(this.pIndexKey === _key) return;
                 this.pIndexKey = _key;
                 this.$emit('tabTo',{
                     status : 'tabTo',
