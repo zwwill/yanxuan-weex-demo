@@ -14,6 +14,7 @@
         <div class="bar-item" @click="tabTo('topic')">
             <text class="bar-ic iconfont" :class="[this.pIndexKey == 'topic'?'bar-active':'']">&#xe744;</text>
             <text class="bar-txt" :class="[this.pIndexKey == 'topic'?'bar-active':'']">专题</text>
+            <text class="notice-dot"></text>
         </div>
         <div class="bar-item" @click="tabTo('class')">
             <text class="bar-ic iconfont" :class="[this.isActive('class')]">&#xe605;</text>
@@ -26,6 +27,7 @@
         <div class="bar-item" @click="tabTo('my')">
             <text class="bar-ic iconfont" :class="[this.isActive('my')]">&#xe639;</text>
             <text class="bar-txt" :class="[this.isActive('my')]">个人</text>
+            <text class="i-notice">2</text>
         </div>
     </div>
 </template>
@@ -65,6 +67,28 @@
     .bar-txt{
         font-size: 22px;
         padding-top: 2px;
+    }
+    .i-notice{
+        position: absolute;
+        top:10px;
+        right: 30px;
+        height: 30px;
+        width: 30px;
+        border-radius: 100%;
+        font-size: 26px;
+        line-height: 30px;
+        text-align: center;
+        color: #fff;
+        background-color: #f00;
+    }
+    .notice-dot{
+        position: absolute;
+        top:15px;
+        right: 40px;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        background-color: #f00;
     }
 </style>
 <script>

@@ -41,7 +41,7 @@
                     </div>
                 </div>
             </div>
-            <div class="s-box">
+            <div class="s-box cell-button">
                 <div class="box-tlt border-bottom"><text class="box-txt">我的服务</text></div>
                 <div class="box-line line-serve border-bottom" @click="jumpWeb('https://id.163.com/gj/m/')">
                     <div class="i-box-l"><text class="i-box-icon iconfont i-c-orange">&#xe658;</text><text class="i-box-tlt">拼团订单</text></div>
@@ -60,6 +60,12 @@
                     <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe60a;</text><text class="i-box-tlt">客服</text></div>
                     <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe691;</text><text class="i-box-tlt">帮助</text></div>
                     <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe68a;</text><text class="i-box-tlt">设置</text></div>
+                </div>
+            </div>
+            <div class="s-box">
+                <div class="box-tlt border-bottom"><text class="box-txt" style="color:#f00;">Weex项目外链「可能一去无回，慎入」</text></div>
+                <div class="box-line line-serve border-bottom">
+                    <div class="i-box-l"  @click="jumpNative('http://cdn.zwwill.com/justdo8/jsbundles/index.js')"><text class="i-box-icon iconfont" style="color:#00ad00;">&#xe6df;</text><text class="i-box-tlt" >Just Do 8</text></div>
                 </div>
             </div>
         </div>
@@ -254,6 +260,12 @@
                 const url = this.$getConfig().bundleUrl;
                 navigator.push({
                     url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
+                    animated: "true"
+                });
+            },
+            jumpNative (_url) {
+                navigator.push({
+                    url: _url ,
                     animated: "true"
                 });
             }
