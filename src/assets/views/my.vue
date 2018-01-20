@@ -4,7 +4,7 @@
         <image class="header-bg" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
         <image class="header-bg bg2" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
         <image class="header-bg bg3" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
-        <scroller :class="['scroller',isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
+        <scroller :class="[isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
         <div :class="['header', isIpx&&isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
             <text class="i-name">zwwill7</text>
@@ -62,9 +62,9 @@
                     <div class="i-box-l"><text class="i-box-icon iconfont i-c-blue">&#xe68a;</text><text class="i-box-tlt">设置</text></div>
                 </div>
             </div>
-            <div class="s-box">
+            <div class="s-box cell-button">
                 <div class="box-tlt border-bottom"><text class="box-txt" style="color:#f00;">Weex项目外链「可能一去无回，慎入」</text></div>
-                <div class="box-line line-serve border-bottom">
+                <div class="box-line line-serve">
                     <div class="i-box-l"  @click="jumpNative('http://cdn.zwwill.com/justdo8/jsbundles/index.js')"><text class="i-box-icon iconfont" style="color:#00ad00;">&#xe6df;</text><text class="i-box-tlt" >Just Do 8</text></div>
                 </div>
             </div>
