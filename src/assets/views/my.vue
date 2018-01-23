@@ -1,10 +1,10 @@
 <template>
     <div class="wrapper">
         <header5></header5>
-        <image class="header-bg" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
-        <image class="header-bg bg2" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
-        <image class="header-bg bg3" resize="cover" src="http://10.242.69.181:8089/yanxuan/imgs/bg5.png"></image>
-        <scroller :class="[isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
+        <image class="header-bg" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
+        <image class="header-bg bg2" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
+        <image class="header-bg bg3" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
+        <scroller :class="['scroller',isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
         <div :class="['header', isIpx&&isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
             <text class="i-name">zwwill7</text>
@@ -85,6 +85,9 @@
         padding-bottom: 1000px;
         margin-bottom: -1000px;
     }
+    .scroller{
+        margin-bottom: 90px;
+    }
     .ml-ipx{
         margin-bottom: 140px;
     }
@@ -103,6 +106,7 @@
         left: 0;
         right: 0;
         height: 500px;
+        width: 750px;
     }
     .bg2{
         top:500px;
