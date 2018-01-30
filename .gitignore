@@ -5,7 +5,7 @@
 
 # logs
 *.log
-.idea
+#.idea
 npm-debug.log*
 
 # dependencies
