@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping pattern="api" type="JSON" />
       <mapping pattern="index" type="JSON" />
       <mapping pattern="pullGoods" type="JSON" />
       <mapping pattern="subclasses" type="JSON" />
