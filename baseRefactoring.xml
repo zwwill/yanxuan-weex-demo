@@ -1,0 +1,5 @@
+<application>
+  <component name="BaseRefactoringSettings">
+    <option name="MOVE_SEARCH_FOR_REFERENCES_FOR_FILE" value="false" />
+  </component>
+</application>
