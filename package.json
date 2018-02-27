@@ -4,6 +4,9 @@
   "description": "a weex project",
   "main": "index.js",
   "scripts": {
+    "debug": "weex debug src -e entry.js",
+    "ios": "weex build ios",
+    "android": "weex build android",
     "build": "webpack",
     "build_plugin": "webpack --config ./tools/webpack.config.plugin.js --color",
     "dev": "webpack --config webpack.config.js --watch",

@@ -1,0 +1,6 @@
+framework module TBWXDevTool {
+  umbrella header "TBWXDevTool.h"
+
+  export *
+  module * { export * }
+}
