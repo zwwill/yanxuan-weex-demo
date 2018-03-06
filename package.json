@@ -4,7 +4,7 @@
   "description": "a weex project",
   "main": "index.js",
   "scripts": {
-    "debug": "weex debug src -e entry.js",
+    "debug": "weex debug src/entry.js -e",
     "ios": "weex build ios",
     "android": "weex build android",
     "build": "webpack",
