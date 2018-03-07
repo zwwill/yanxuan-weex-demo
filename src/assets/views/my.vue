@@ -1,10 +1,10 @@
 <template>
     <div class="wrapper">
         <header5></header5>
-        <image class="header-bg" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
-        <image class="header-bg bg2" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
-        <image class="header-bg bg3" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
-        <scroller :class="['scroller',isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
+        <image ref="headerBg" class="header-bg" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
+        <!--<image class="header-bg bg2" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>-->
+        <!--<image class="header-bg bg3" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>-->
+        <scroller ref="contentScroller" :class="['scroller',isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
         <div :class="['header', isIpx&&isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
             <text class="i-name">zwwill7</text>
@@ -72,6 +72,93 @@
         </scroller>
     </div>
 </template>
+
+<script>
+
+    import Header4 from '../components/Header4.vue';
+
+    import util from '../util';
+    const navigator = weex.requireModule('navigator');
+    const binding = weex.requireModule('bindingx');
+    export default {
+        data () {
+            return {
+            }
+        },
+        components: {
+            'header5': Header4
+        },
+        mounted(){
+            this.headerBgBinding();
+        },
+        methods: {
+
+            jumpWeb (_url) {
+                const url = this.$getConfig().bundleUrl;
+                navigator.push({
+                    url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
+                    animated: "true"
+                });
+            },
+            jumpNative (_url) {
+                navigator.push({
+                    url: _url ,
+                    animated: "true"
+                });
+            },
+            headerBgBinding(){
+
+                var self = this;
+
+//
+                    var scroller = self.$refs.contentScroller.ref,
+                        headerBg = self.$refs.headerBg.ref;
+
+                    var result = binding.bind({
+                        eventType:'scroll',
+                        anchor:scroller,
+                        props:[
+                            {
+                                element:headerBg,
+                                property:'transform.scale',
+                                expression:{
+                                    origin:'y<0?(1-y/500):(1+y/500)'
+                                }
+//                                expression:{
+//                                    origin:'max(1-y/500,1)',
+//                                    transformed:`{\"type\":\"CallExpression\",
+//                                        \"children\":[
+//                                            {\"type\":\"Identifier\",\"value\":\"max\"},
+//                                            {\"type\":\"Arguments\",\"children\":[
+//                                                   {\"type\":\"-\",\"children\":[
+//                                                             {\"type\":\"NumericLiteral\",\"value\":1},
+//                                                             {\"type\":\"/\",\"children\":[
+//                                                                     {"type":"Identifier","value":"y"},
+//                                                                     {\"type\":\"NumericLiteral\",\"value\":500}
+//                                                             ]}
+//                                                   ]},
+//                                                   {\"type\":\"NumericLiteral\",\"value\":1}
+//                                            ]}
+//                                        ]}`
+//                                }
+                            },
+                            {
+                                element:headerBg,
+                                property:'transform.translateY',
+                                expression:{
+                                    origin:'-y/2'
+                                }
+                            }
+
+                        ]
+                    },function(e){
+                    });
+
+            }
+        }
+    }
+</script>
+
 <style scoped>
 
     .iconfont {
@@ -241,38 +328,3 @@
         color:#689de5;
     }
 </style>
-
-<script>
-
-    import Header4 from '../components/Header4.vue';
-
-    import util from '../util';
-    var navigator = weex.requireModule('navigator');
-    export default {
-        data () {
-            return {
-            }
-        },
-        components: {
-            'header5': Header4
-        },
-        created(){
-        },
-        methods: {
-
-            jumpWeb (_url) {
-                const url = this.$getConfig().bundleUrl;
-                navigator.push({
-                    url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
-                    animated: "true"
-                });
-            },
-            jumpNative (_url) {
-                navigator.push({
-                    url: _url ,
-                    animated: "true"
-                });
-            }
-        }
-    }
-</script>
