@@ -716,7 +716,7 @@
 					"$(inherited)",
 					"-licucore",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.weex.yanxuan.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.weex.yanxuan.demo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -749,7 +749,7 @@
 					"$(inherited)",
 					"-licucore",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.weex.yanxuan.demo;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.weex.yanxuan.demo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";

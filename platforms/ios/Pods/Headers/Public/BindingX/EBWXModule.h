@@ -1,0 +1,1 @@
+../../../BindingX/weex/ios/Sources/EBWXModule.h

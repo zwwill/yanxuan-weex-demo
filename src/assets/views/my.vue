@@ -114,7 +114,7 @@
                     var scroller = self.$refs.contentScroller.ref,
                         headerBg = self.$refs.headerBg.ref;
 
-                    var result = binding.bind({
+                    var result = binding && binding.bind({
                         eventType:'scroll',
                         anchor:scroller,
                         props:[
