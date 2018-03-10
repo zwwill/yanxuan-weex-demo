@@ -91,6 +91,9 @@
         mounted(){
             this.headerBgBinding();
         },
+        beforeDestroy(){
+            this.headerBgBindingDestory();
+        },
         methods: {
 
             jumpWeb (_url) {
@@ -114,7 +117,7 @@
                     var scroller = self.$refs.contentScroller.ref,
                         headerBg = self.$refs.headerBg.ref;
 
-                    var result = binding && binding.bind({
+                    var bindingResult = binding && binding.bind({
                         eventType:'scroll',
                         anchor:scroller,
                         props:[
@@ -153,7 +156,18 @@
                         ]
                     },function(e){
                     });
+                self.gesToken = bindingResult.token;
+            },
 
+            headerBgBindingDestory(){
+                let self = this;
+                if(self.gesToken != 0) {
+                    eb.unbind({
+                        eventType:'scroll',
+                        token:self.gesToken
+                    })
+                    self.gesToken = 0;
+                }
             }
         }
     }
