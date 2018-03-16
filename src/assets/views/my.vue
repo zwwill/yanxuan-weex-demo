@@ -111,22 +111,20 @@
             },
             headerBgBinding(){
 
-                var self = this;
+                var self = this,
+                    scroller = self.$refs.contentScroller.ref,
+                    headerBg = self.$refs.headerBg.ref;
 
-//
-                    var scroller = self.$refs.contentScroller.ref,
-                        headerBg = self.$refs.headerBg.ref;
-
-                    var bindingResult = binding && binding.bind({
-                        eventType:'scroll',
-                        anchor:scroller,
-                        props:[
-                            {
-                                element:headerBg,
-                                property:'transform.scale',
-                                expression:{
-                                    origin:'y<0?(1-y/500):(1+y/500)'
-                                }
+                var bindingResult = binding && binding.bind({
+                    eventType:'scroll',
+                    anchor:scroller,
+                    props:[
+                        {
+                            element:headerBg,
+                            property:'transform.scale',
+                            expression:{
+                                origin:'y<0?(1-y/500):(1+y/500)'
+                            }
 //                                expression:{
 //                                    origin:'max(1-y/500,1)',
 //                                    transformed:`{\"type\":\"CallExpression\",
@@ -144,18 +142,18 @@
 //                                            ]}
 //                                        ]}`
 //                                }
-                            },
-                            {
-                                element:headerBg,
-                                property:'transform.translateY',
-                                expression:{
-                                    origin:'-y/2'
-                                }
+                        },
+                        {
+                            element:headerBg,
+                            property:'transform.translateY',
+                            expression:{
+                                origin:'-y/2'
                             }
+                        }
 
-                        ]
-                    },function(e){
-                    });
+                    ]
+                },function(e){
+                });
                 self.gesToken = bindingResult.token;
             },
 
