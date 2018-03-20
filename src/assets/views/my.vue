@@ -125,23 +125,6 @@
                             expression:{
                                 origin:'y<0?(1-y/500):(1+y/500)'
                             }
-//                                expression:{
-//                                    origin:'max(1-y/500,1)',
-//                                    transformed:`{\"type\":\"CallExpression\",
-//                                        \"children\":[
-//                                            {\"type\":\"Identifier\",\"value\":\"max\"},
-//                                            {\"type\":\"Arguments\",\"children\":[
-//                                                   {\"type\":\"-\",\"children\":[
-//                                                             {\"type\":\"NumericLiteral\",\"value\":1},
-//                                                             {\"type\":\"/\",\"children\":[
-//                                                                     {"type":"Identifier","value":"y"},
-//                                                                     {\"type\":\"NumericLiteral\",\"value\":500}
-//                                                             ]}
-//                                                   ]},
-//                                                   {\"type\":\"NumericLiteral\",\"value\":1}
-//                                            ]}
-//                                        ]}`
-//                                }
                         },
                         {
                             element:headerBg,
@@ -160,7 +143,7 @@
             headerBgBindingDestory(){
                 let self = this;
                 if(self.gesToken != 0) {
-                    eb.unbind({
+                    binding.unbind({
                         eventType:'scroll',
                         token:self.gesToken
                     })
