@@ -344,7 +344,7 @@
 				TargetAttributes = {
 					775BEE7A1C1E8ECC008D1629 = {
 						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = NSGDJKXNW5;
+						DevelopmentTeam = 3SEW6R8C49;
 						ProvisioningStyle = Automatic;
 					};
 					775BEE931C1E8ECC008D1629 = {
@@ -700,7 +700,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NSGDJKXNW5;
+				DEVELOPMENT_TEAM = 3SEW6R8C49;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -716,7 +716,7 @@
 					"$(inherited)",
 					"-licucore",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.WeexPlayground3.uitest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.yanxuan.demo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -730,10 +730,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = NSGDJKXNW5;
+				DEVELOPMENT_TEAM = 3SEW6R8C49;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -749,7 +749,7 @@
 					"$(inherited)",
 					"-licucore",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.WeexPlayground3.uitest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.yanxuan.demo2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -814,7 +814,7 @@
 					"$(inherited)",
 					"-licucore",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.WeexPlayground2.uitest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.yanxuan.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
@@ -846,7 +846,7 @@
 					"$(inherited)",
 					"-licucore",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.WeexPlayground2.uitest;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zwwill.yanxuan.demo1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 			};
