@@ -1,0 +1,5 @@
+<application>
+  <component name="BaseRefactoringSettings">
+    <option name="SAFE_DELETE_SEARCH_IN_COMMENTS" value="false" />
+  </component>
+</application>
