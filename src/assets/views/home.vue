@@ -147,6 +147,7 @@
                 }, 300)
             },
             onloadmore () {
+                modal.toast({ message: 'loading', duration: 0.3 })
                 setTimeout(() => {
                     this.goodsList.push(...this.recommend.goods1);
                 }, 100)
