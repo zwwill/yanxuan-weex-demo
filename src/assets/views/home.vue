@@ -132,7 +132,6 @@
         methods: {
             jumpWeb (_url) {
                 const url = this.$getConfig().bundleUrl;
-                console.log(util.setBundleUrl(url, 'page/webview.js?weburl='+_url));
                 navigator.push({
                     url: util.setBundleUrl(url, 'page/webview.js?weburl='+_url) ,
                     animated: "true"

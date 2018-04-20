@@ -20,12 +20,10 @@ let utilFunc = {
         if (isAndroidAssets) {
             nativeBase = 'file://assets/dist';
         } else if (isiOSAssets) {
-            // file:///var/mobile/Containers/Bundle/Application/{id}/WeexDemo.app/
-            // file:///Users/{user}/Library/Developer/CoreSimulator/Devices/{id}/data/Containers/Bundle/Application/{id}/WeexDemo.app/
             nativeBase = bundleUrl.substring(0, bundleUrl.lastIndexOf('/') + 1);
         } else {
             const matches = /\/\/([^\/]+?)\//.exec(bundleUrl);
-            const matchFirstPath = /\/\/[^\/]+\/([^\s]+)\//.exec(bundleUrl);
+            const matchFirstPath = /\/\/[^\/]+\/([^\/\s]+)\//.exec(bundleUrl);
             if (matches && matches.length >= 2) {
                 host = matches[1];
             }
