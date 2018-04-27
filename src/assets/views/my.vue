@@ -89,10 +89,10 @@
             'header5': Header4
         },
         mounted(){
-            this.headerBgBinding();
+            binding && this.headerBgBinding();
         },
         beforeDestroy(){
-            this.headerBgBindingDestory();
+            binding && this.headerBgBindingDestory();
         },
         methods: {
 
@@ -115,7 +115,7 @@
                     scroller = self.$refs.contentScroller.ref,
                     headerBg = self.$refs.headerBg.ref;
 
-                var bindingResult = binding && binding.bind({
+                var bindingResult = binding.bind({
                     eventType:'scroll',
                     anchor:scroller,
                     props:[
@@ -137,7 +137,7 @@
                     ]
                 },function(e){
                 });
-                self.gesToken = bindingResult.token;
+                self.gesToken = bindingResult&&bindingResult.token;
             },
 
             headerBgBindingDestory(){
