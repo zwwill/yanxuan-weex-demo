@@ -41,7 +41,7 @@
     "webpack": "^2.7.0",
     "webpack-dev-server": "^2.4.2",
     "weex-builder": "^0.2.7",
-    "weex-loader": "^0.4.5",
+    "weex-loader": "^0.7.3",
     "weex-router": "0.0.1"
   },
   "optionalDependencies": {
