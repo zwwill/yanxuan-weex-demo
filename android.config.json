@@ -1,6 +1,6 @@
 {
   "AppName":"YanXuanWeex",
   "AppId":"com.zwwill.weex.yanxuan.demo",
-  "SplashText":"Hello\nWeex",
+  "SplashText":"Hello Weex",
   "WeexBundle":"index.js"
 }
