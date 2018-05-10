@@ -153,7 +153,7 @@
     return [WXUtility defaultPixelScaleFactor];
 }
 
-+ (UIPanGestureRecognizer *_Nullable)getPanGestureForComponent:(id _Nullable )source callback:(EBGetPanGestureCallback)callback
++ (UIPanGestureRecognizer *_Nullable)getPanGestureForSource:(id _Nullable )source callback:(EBGetPanGestureCallback)callback
 {
     WXComponent *component = (WXComponent *)source;
     Ivar ivarPan = class_getInstanceVariable([component class], "_panGesture");
@@ -212,10 +212,17 @@
     return nil;
 }
 
-+ (NSString *)colorAsString:(CGColorRef)cgColor
-{
++ (NSString *)colorAsString:(CGColorRef)cgColor {
     const CGFloat *components = CGColorGetComponents(cgColor);
     return [NSString stringWithFormat:@"rgba(%d,%d,%d,%f)", (int)(components[0]*255), (int)(components[1]*255), (int)(components[2]*255), components[3]];
+}
+
++ (UIView *)getViewByRef:(id)ref {
+    if ([ref isKindOfClass:WXComponent.class]) {
+        WXComponent* component = (WXComponent *)ref;
+        return component.view;
+    }
+    return nil;
 }
 
 #pragma clang diagnostic pop

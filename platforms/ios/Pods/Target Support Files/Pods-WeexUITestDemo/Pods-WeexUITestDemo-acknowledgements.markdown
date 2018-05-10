@@ -54,6 +54,11 @@ THE SOFTWARE.
 Alibaba-INC copyright
 
 
+## WeexPluginLoader
+
+Alibaba-INC copyright
+
+
 ## WeexSDK
 
 Alibaba-INC copyright

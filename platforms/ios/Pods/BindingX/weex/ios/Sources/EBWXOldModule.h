@@ -17,6 +17,7 @@
 #import <Foundation/Foundation.h>
 #import <WeexSDK/WXModuleProtocol.h>
 
-@interface EBWXDeprecatedModule : NSObject <WXModuleProtocol>
+__attribute__ ((deprecated("EBWXOldModule is deprecated, EBWXModule instead it.")))
+@interface EBWXOldModule : NSObject <WXModuleProtocol>
 
 @end

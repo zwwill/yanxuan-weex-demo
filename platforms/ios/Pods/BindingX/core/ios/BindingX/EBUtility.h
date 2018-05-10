@@ -34,7 +34,7 @@ typedef void (^EBPerformBlock)(void);
 
 + (void)execute:(EBExpressionProperty *_Nullable)model to:(id _Nullable )target;
 
-+ (UIPanGestureRecognizer *_Nullable)getPanGestureForComponent:(id _Nullable )source callback:(EBGetPanGestureCallback _Nonnull )callback;
++ (UIPanGestureRecognizer *_Nullable)getPanGestureForSource:(id _Nullable )source callback:(EBGetPanGestureCallback _Nonnull )callback;
 
 + (void)addScrollDelegate:(id<UIScrollViewDelegate> _Nullable )delegate source:(id _Nullable )source;
 

@@ -14,20 +14,23 @@
  * limitations under the License.
  */
 
-#import "EBWXDeprecatedModule.h"
+#import "EBWXOldModule.h"
 #import <WeexSDK/WeexSDK.h>
 #import "EBExpressionHandler.h"
 #import <pthread/pthread.h>
+#import <WeexPluginLoader/WeexPluginLoader.h>
 #import "EBBindData.h"
 #import "EBUtility+WX.h"
 
-@interface EBWXDeprecatedModule ()
+WX_PlUGIN_EXPORT_MODULE(expressionBinding, EBWXOldModule)
+
+@interface EBWXOldModule ()
 
 @property (nonatomic, strong) EBBindData *bindData;
 
 @end
 
-@implementation EBWXDeprecatedModule {
+@implementation EBWXOldModule {
     pthread_mutex_t mutex;
     pthread_mutexattr_t mutexAttr;
 }
@@ -40,11 +43,6 @@ WX_EXPORT_METHOD(@selector(disableBinding:eventType:))
 WX_EXPORT_METHOD(@selector(disableAll))
 WX_EXPORT_METHOD_SYNC(@selector(supportFeatures))
 WX_EXPORT_METHOD_SYNC(@selector(getComputedStyle:))
-
-+ (void)load
-{
-    [WXSDKEngine registerModule:@"expressionBinding" withClass:EBWXDeprecatedModule.class];
-}
 
 - (instancetype)init {
     if (self = [super init]) {

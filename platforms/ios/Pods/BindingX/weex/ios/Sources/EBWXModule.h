@@ -14,13 +14,9 @@
  * limitations under the License.
  */
 
-#ifndef WXEBModule_h
-#define WXEBModule_h
-
 #import <Foundation/Foundation.h>
 #import <WeexSDK/WXModuleProtocol.h>
 
 @interface EBWXModule : NSObject <WXModuleProtocol>
 
 @end
-#endif /* WXEBModule_h */
