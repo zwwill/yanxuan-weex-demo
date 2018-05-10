@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/res/drawable-anydpi-v21/design_ic_visibility.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-anydpi-v21/design_ic_visibility_off.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/res/drawable-anydpi-v21/design_ic_visibility_off.xml"
+    }
+]
