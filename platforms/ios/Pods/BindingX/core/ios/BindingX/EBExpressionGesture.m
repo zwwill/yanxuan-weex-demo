@@ -81,7 +81,7 @@
 }
 
 -(void)addGuestureOnMainThread {
-    self.gesture = [EBUtility getPanGestureForComponent:self.source callback:^(BOOL isHorizontal, BOOL isVertical) {
+    self.gesture = [EBUtility getPanGestureForSource:self.source callback:^(BOOL isHorizontal, BOOL isVertical) {
         _isHorizontal = isHorizontal;
         _isVertical = isVertical;
 
@@ -154,7 +154,8 @@
                 return YES;
             }
             
-            CGPoint translation = [(UIPanGestureRecognizer*)_gesture translationInView:self.source];
+            UIView* view = [EBUtility getViewByRef:self.source];
+            CGPoint translation = [(UIPanGestureRecognizer*)_gesture translationInView:view];
             if (_isHorizontal && fabs(translation.y) > fabs(translation.x)) {
                 return NO;
             } else if (_isVertical && fabs(translation.x) > fabs(translation.y)) {

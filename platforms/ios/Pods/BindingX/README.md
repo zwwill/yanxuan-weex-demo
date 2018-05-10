@@ -3,8 +3,11 @@
 
 # BindingX
 
+[![Join the chat at https://gitter.im/alibaba/bindingx](https://badges.gitter.im/alibaba/bindingx.svg)](https://gitter.im/alibaba/bindingx?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 ![image | left](https://img.shields.io/badge/PRs-welcome-brightgreen.svg "")
 ![image | left](https://img.shields.io/badge/license-Apache--2.0-brightgreen.svg "")
+[![CircleCI](https://circleci.com/gh/alibaba/bindingx/tree/master.svg?style=svg)](https://circleci.com/gh/alibaba/bindingx/tree/master)
 
 * [Read Documentation](https://alibaba.github.io/bindingx/guide/introduce)
 * [中文](https://github.com/alibaba/bindingx/blob/master/README_cn.md)
@@ -21,10 +24,12 @@ We exploreed and implemented a completely new approach to solve the problem. It'
 
 # Glance
 
+Below are some examples which is using bindingx. You can get more examples by running our playground app. Or you can write your own example use our [online playground](https://alibaba.github.io/bindingx/playground), have fun:)
+
 <div align="center">
-    <img src="https://gw.alicdn.com/tfs/TB1fES5bhGYBuNjy0FnXXX5lpXa-320-563.gif" width = "200" height = "350"/>
-    <img src="https://gw.alicdn.com/tfs/TB1hOaKbbGYBuNjy0FoXXciBFXa-320-563.gif" width = "200" height = "350"/>
-    <img src="https://gw.alicdn.com/tfs/TB1LCmUbkyWBuNjy0FpXXassXXa-320-563.gif" width = "200" height = "350"/>
+    <img style="margin-right:10px" src="https://gw.alicdn.com/tfs/TB1fES5bhGYBuNjy0FnXXX5lpXa-320-563.gif" width = "200" height = "350"/>
+    <img style="margin-right:10px" src="https://gw.alicdn.com/tfs/TB1hOaKbbGYBuNjy0FoXXciBFXa-320-563.gif" width = "200" height = "350"/>
+    <img style="margin-right:10px" src="https://gw.alicdn.com/tfs/TB1LCmUbkyWBuNjy0FpXXassXXa-320-563.gif" width = "200" height = "350"/>
     <img src="https://gw.alicdn.com/tfs/TB1FRGZbeuSBuNjy1XcXXcYjFXa-320-563.gif" width = "200" height = "350"/>
 </div>
 
@@ -77,11 +82,18 @@ We provide two ways to integrate bindingx plugin.
       ```
 
 #### iOS
-carry on
+
+add dependencies in your application's `Podfile`
+
+```
+  pod 'BindingX', '~> 1.0.1'
+```
+
+module will be registed automatically.
 
 ### React Native
 
-we will upload React Native bindingx plugin to npm as soon as possible, then you can use `react-native add` command to install. But for now, you should compile our plugin using source code.
+we will upload React Native bindingx plugin to npm as soon as possible, then you can use `npm install` command to install. But for now, you should compile our plugin using source code.
 
 # Who is using
 

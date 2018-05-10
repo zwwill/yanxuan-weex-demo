@@ -18,8 +18,11 @@
 #import <WeexSDK/WeexSDK.h>
 #import "EBExpressionHandler.h"
 #import <pthread/pthread.h>
+#import <WeexPluginLoader/WeexPluginLoader.h>
 #import "EBBindData.h"
 #import "EBUtility+WX.h"
+
+WX_PlUGIN_EXPORT_MODULE(bindingx, EBWXModule)
 
 @interface EBWXModule ()
 
@@ -40,12 +43,6 @@ WX_EXPORT_METHOD(@selector(unbind:))
 WX_EXPORT_METHOD(@selector(unbindAll))
 WX_EXPORT_METHOD_SYNC(@selector(supportFeatures))
 WX_EXPORT_METHOD_SYNC(@selector(getComputedStyle:))
-
-+ (void)load
-{
-    [WXSDKEngine registerModule:@"binding" withClass:EBWXModule.class];
-    [WXSDKEngine registerModule:@"bindingx" withClass:EBWXModule.class];
-}
 
 - (instancetype)init {
     if (self = [super init]) {
@@ -312,5 +309,11 @@ WX_EXPORT_METHOD_SYNC(@selector(getComputedStyle:))
     dispatch_semaphore_wait(semaphore, DISPATCH_TIME_FOREVER);
     return styles;
 }
+
+@end
+
+WX_PlUGIN_EXPORT_MODULE(binding, EBWXBindingModule)
+
+@interface EBWXBindingModule : EBWXModule
 
 @end

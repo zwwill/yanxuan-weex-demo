@@ -52,7 +52,7 @@
     
 }
 
-+ (UIPanGestureRecognizer *_Nullable)getPanGestureForComponent:(id _Nullable )source callback:(EBGetPanGestureCallback _Nonnull )callback
++ (UIPanGestureRecognizer *_Nullable)getPanGestureForSource:(id _Nullable )source callback:(EBGetPanGestureCallback _Nonnull )callback
 {
     return nil;
 }
