@@ -63,7 +63,7 @@ walk();
 const plugins = [
   new webpack.optimize.UglifyJsPlugin({minimize: true}),
   new webpack.BannerPlugin({
-    banner: '// { "framework": ' + (fileType === '.vue' ? '"Vue"' : '"Weex"') + '} \n',
+    banner: '// { "framework": "Weex" } \n',
     raw: true,
     exclude: 'Vue'
   })
@@ -119,12 +119,6 @@ const weexConfig = {
             },
             {
                 test: /\.vue(\?[^?]+)?$/,
-                use: [{
-                    loader: 'weex-loader'
-                }]
-            },
-            {
-                test: /\.we(\?[^?]+)?$/,
                 use: [{
                     loader: 'weex-loader'
                 }]
