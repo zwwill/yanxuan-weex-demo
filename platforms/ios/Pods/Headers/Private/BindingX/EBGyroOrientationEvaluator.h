@@ -1,1 +1,0 @@
-../../../BindingX/core/ios/BindingX/EBGyroOrientationEvaluator.h

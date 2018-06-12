@@ -1,1 +1,0 @@
-../../../../WeexPluginLoader/WeexPluginLoader.framework/Headers/WPLRegister.h
