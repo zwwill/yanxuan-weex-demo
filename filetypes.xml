@@ -1,6 +1,7 @@
 <application>
   <component name="FileTypeManager" version="17">
     <extensionMap>
+      <mapping ext="mcss" type="CSS" />
       <mapping pattern="api" type="JSON" />
       <mapping pattern="index" type="JSON" />
       <mapping pattern="pullGoods" type="JSON" />
@@ -15,7 +16,6 @@
       <mapping pattern="util" type="PLAIN_TEXT" />
       <mapping pattern="t1" type="PLAIN_TEXT" />
       <mapping ext="md" type="PLAIN_TEXT" />
-      <mapping ext="mcss" type="PLAIN_TEXT" />
       <mapping ext="rgl" type="XML" />
     </extensionMap>
   </component>
