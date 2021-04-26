@@ -1,9 +1,9 @@
 <template>
     <div class="wrapper">
         <header5></header5>
-        <image ref="headerBg" class="header-bg" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>
-        <!--<image class="header-bg bg2" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>-->
-        <!--<image class="header-bg bg3" resize="cover" src="http://cdn.zwwill.com/yanxuan/imgs/bg5.png"></image>-->
+        <image ref="headerBg" class="header-bg" resize="cover" src="http://doc.zwwill.com/yanxuan/imgs/bg5.png"></image>
+        <!--<image class="header-bg bg2" resize="cover" src="http://doc.zwwill.com/yanxuan/imgs/bg5.png"></image>-->
+        <!--<image class="header-bg bg3" resize="cover" src="http://doc.zwwill.com/yanxuan/imgs/bg5.png"></image>-->
         <scroller ref="contentScroller" :class="['scroller',isIpx&&isIpx()?'ml-ipx':'']"  show-scrollbar="false">
         <div :class="['header', isIpx&&isIpx()?'h-ipx':'']"  @click="jumpWeb('http://m.you.163.com/ucenter')">
             <image class="i-photo" resize="cover" src="http://yanxuan.nosdn.127.net/885e3901d0a3501362530435d76bebb3.jpg"></image>
