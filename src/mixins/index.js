@@ -14,7 +14,7 @@ export default {
             return stream.fetch({
                 method: 'GET',
                 type: 'json',
-                url: 'http://cdn.zwwill.com/yanxuan/' + api
+                url: 'http://doc.zwwill.com/yanxuan/' + api
                 // url: 'http://10.242.69.181:8089/yanxuan/' + api
             }, callback)
         }
