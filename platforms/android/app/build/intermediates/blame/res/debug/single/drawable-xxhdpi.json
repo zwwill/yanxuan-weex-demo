@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_scan.png",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/res/drawable-xxhdpi/ic_action_scan.png"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/drawable-xxhdpi/ic_action_refresh.png",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/res/drawable-xxhdpi/ic_action_refresh.png"
+    }
+]

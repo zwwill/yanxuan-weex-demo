@@ -1,0 +1,23 @@
+<application>
+  <component name="FileTypeManager" version="17">
+    <extensionMap>
+      <mapping pattern="index" type="JSON" />
+      <mapping pattern="subclasses" type="JSON" />
+      <mapping pattern="pullGoods" type="JSON" />
+      <mapping pattern="articles" type="JSON" />
+      <mapping pattern="api" type="JSON" />
+      <mapping pattern="t2" type="PLAIN_TEXT" />
+      <mapping pattern="t1" type="PLAIN_TEXT" />
+      <mapping pattern=".empty" type="PLAIN_TEXT" />
+      <mapping pattern="test" type="PLAIN_TEXT" />
+      <mapping pattern="index.json" type="PLAIN_TEXT" />
+      <mapping pattern=".npmrc" type="PLAIN_TEXT" />
+      <mapping pattern=".env.development.local" type="PLAIN_TEXT" />
+      <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
+      <mapping pattern="util" type="PLAIN_TEXT" />
+      <mapping ext="md" type="PLAIN_TEXT" />
+      <mapping ext="mcss" type="SCSS" />
+      <mapping ext="rgl" type="XML" />
+    </extensionMap>
+  </component>
+</application>

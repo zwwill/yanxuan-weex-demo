@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action_tombstone.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/res/layout-v21/notification_action_tombstone.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_icon_group.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/res/layout-v21/notification_template_icon_group.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_template_custom_big.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/res/layout-v21/notification_template_custom_big.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/layout-v21/notification_action.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/res/layout-v21/notification_action.xml"
+    }
+]

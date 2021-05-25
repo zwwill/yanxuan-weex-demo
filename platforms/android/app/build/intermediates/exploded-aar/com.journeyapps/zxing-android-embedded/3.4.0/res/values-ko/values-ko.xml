@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zxing_app_name">바코드 스캐너</string>
+    <string name="zxing_button_ok">확인</string>
+    <string name="zxing_msg_camera_framework_bug">죄송합니다. 기기의 카메라에 오류가 생겼습니다. 기기를 재시작 해야될 수도 있습니다.</string>
+    <string name="zxing_msg_default_status">바코드를 사각형 안에 비춰주세요.</string>
+</resources>

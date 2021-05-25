@@ -1,7 +1,7 @@
 <template>
     <div class="wrapper">
 
-        <div class="toolbar">
+        <div :class="['toolbar', isipx?'t-ipx':'']">
             <div class="left">
                 <text class="btnTxt iconfont"  @click="back">&#xe606;</text>
                 <text class="btnTxt iconfont"  @click="close">&#xe68b;</text>
@@ -11,15 +11,14 @@
                 <text class="btnTxt iconfont" @click="reload">&#xe601;</text>
             </div>
         </div>
-        <div class="webview-box">
+        <div :class="['webview-box', isipx?'web-ipx':'']">
         <web ref="wv" class="webview" :src="url" @error="error"></web>
         </div>
     </div>
 </template>
 <script>
-    const navigator = weex.requireModule('navigator')
-    const webview = weex.requireModule('webview')
-    const modal = weex.requireModule('modal')
+    const navigator = weex.requireModule('navigator');
+    const webview = weex.requireModule('webview');
     import util from '../assets/util';
     export default {
         components: {
@@ -32,26 +31,27 @@
         created (_e) {
             util.initIconFont();
             this.url =  util.getUrlSearch(weex.config.bundleUrl,'weburl') || this.url0;
-            console.log('webPageURL', this.url )
-//            modal.toast({ message: this.url });
+//            console.log('webPageURL', this.url )
+        },
+        computed:{
+            isipx : function() {
+                return weex && (weex.config.env.deviceModel === 'iPhone10,3' || weex.config.env.deviceModel === 'iPhone10,6');
+            }
         },
         methods: {
             back (event) {
-                modal.toast({ message: 'back' })
-                webview.goBack(this.$refs.wv)
+                webview.goBack(this.$refs.wv);
             },
             close (event) {
                 navigator.pop({
-                    animated:"false"
+                    animated:"true"
                 });
             },
             reload (event) {
-                modal.toast({ message: 'reload' })
                 webview.reload(this.$refs.wv)
             },
             error (event) {
-                console.log('error', event)
-//                modal.toast({ message: 'error' })
+//                console.log('error', event)
             }
         }
     }
@@ -82,6 +82,10 @@
         justify-content: space-around;
         border-bottom-width: 1px;
         border-bottom-color: #d9d9d9;
+    }
+    .t-ipx{
+        height: 154px;
+        padding-top: 84px;
     }
     .tlt{
         flex: 1;
@@ -120,6 +124,9 @@
         left: 0;
         right:0;
         bottom: 0;
+    }
+    .web-ipx{
+        top:154px;
     }
     .webview{
         position: absolute;

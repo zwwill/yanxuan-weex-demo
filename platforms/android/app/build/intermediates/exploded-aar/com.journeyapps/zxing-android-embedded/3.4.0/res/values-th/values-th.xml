@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">ตกลง</string>
+    <string name="zxing_msg_camera_framework_bug">ขออภัย พบปัญหาของกล้อง Android คุณอาจจะต้องรีสตาร์ทอุปกรณ์</string>
+    <string name="zxing_msg_default_status">วางบาร์โค้ดภายในสี่เหลี่ยมผืนผ้าที่ช่องมองภาพเพื่อสแกน</string>
+</resources>

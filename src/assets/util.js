@@ -7,7 +7,7 @@ let utilFunc = {
         let domModule = weex.requireModule('dom');
         domModule.addRule('fontFace', {
             'fontFamily': "iconfont",
-            'src': "url('http://at.alicdn.com/t/font_404010_jgmnakd1zizr529.ttf')"
+            'src': "url('http://at.alicdn.com/t/font_404010_f29c7wlkludz33di.ttf')"
         });
     },
     setBundleUrl(url, jsFile) {
@@ -20,12 +20,10 @@ let utilFunc = {
         if (isAndroidAssets) {
             nativeBase = 'file://assets/dist';
         } else if (isiOSAssets) {
-            // file:///var/mobile/Containers/Bundle/Application/{id}/WeexDemo.app/
-            // file:///Users/{user}/Library/Developer/CoreSimulator/Devices/{id}/data/Containers/Bundle/Application/{id}/WeexDemo.app/
             nativeBase = bundleUrl.substring(0, bundleUrl.lastIndexOf('/') + 1);
         } else {
             const matches = /\/\/([^\/]+?)\//.exec(bundleUrl);
-            const matchFirstPath = /\/\/[^\/]+\/([^\/]+)\//.exec(bundleUrl);
+            const matchFirstPath = /\/\/[^\/]+\/([^\/\s]+)\//.exec(bundleUrl);
             if (matches && matches.length >= 2) {
                 host = matches[1];
             }

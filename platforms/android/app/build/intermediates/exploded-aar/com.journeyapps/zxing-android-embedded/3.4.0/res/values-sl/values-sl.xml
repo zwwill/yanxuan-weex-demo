@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">V redu</string>
+    <string name="zxing_msg_camera_framework_bug">Oprostite, Android kamera je naletela na težave. Mogoče boste morali ponovno zagnati napravo.</string>
+    <string name="zxing_msg_default_status">Za branje postavite črtno kodo znotraj iskala.</string>
+</resources>

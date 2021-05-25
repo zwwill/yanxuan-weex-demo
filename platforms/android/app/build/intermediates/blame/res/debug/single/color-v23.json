@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_btn_colored_text_material.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_seek_thumb.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_btn_checkable.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_switch_track.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_color_highlight_material.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_spinner.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_edittext.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_tint_edittext.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/abc_tint_default.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/res/color-v23/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/res/merged/debug/color-v23/design_tint_password_toggle.xml",
+        "source": "/Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/res/color-v23/design_tint_password_toggle.xml"
+    }
+]

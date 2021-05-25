@@ -1,0 +1,214 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:2:1-47:12
+	package
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:4:11-33
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+	xmlns:tools
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:3:11-57
+	xmlns:android
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:6:22-64
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:7:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:8:5-79
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:8:22-77
+uses-permission#android.permission.CAMERA
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:9:5-64
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:21:5-65
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:9:22-62
+uses-permission#com.android.launcher.permission.INSTALL_SHORTCUT
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:10:5-87
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:10:22-85
+uses-feature#android.hardware.camera
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:12:5-59
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:24:5-26:36
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:12:19-57
+uses-feature#android.hardware.camera.autofocus
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:13:5-69
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:32:5-34:36
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:13:19-67
+application
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:15:5-45:19
+MERGED from [com.taobao.android:weex_sdk:0.16.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.16.0/AndroidManifest.xml:29:5-35:19
+MERGED from [com.android.support:design:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/transition/26.1.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.taobao.android:weex_inspector:0.10.0.5] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_inspector/0.10.0.5/AndroidManifest.xml:13:5-20
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:45:5-53:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.0/AndroidManifest.xml:24:5-28:19
+MERGED from [com.taobao.android:weexplugin-loader:1.3] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weexplugin-loader/1.3/AndroidManifest.xml:9:5-13:19
+	android:label
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:19:9-41
+	android:supportsRtl
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:20:9-35
+	tools:overrideLibrary
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:22:9-60
+	android:allowBackup
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:17:9-36
+		REJECTED from [com.taobao.android:weexplugin-loader:1.3] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weexplugin-loader/1.3/AndroidManifest.xml:10:9-36
+	android:icon
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:18:9-43
+	android:theme
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:21:9-40
+	tools:replace
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:23:9-44
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:16:9-50
+activity#com.weex.app.SplashActivity
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:24:9-35:20
+	android:screenOrientation
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:28:13-49
+	android:label
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:27:13-45
+	android:configChanges
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:26:13-74
+	android:theme
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:29:13-51
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:25:13-55
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:30:13-34:29
+action#android.intent.action.MAIN
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:31:17-68
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:31:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:33:17-76
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:33:27-74
+activity#com.weex.app.WXPageActivity
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:36:9-40:20
+	android:screenOrientation
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:39:13-49
+	android:label
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:38:13-45
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:37:13-55
+activity#com.journeyapps.barcodescanner.CaptureActivity
+ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:41:9-44:48
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:46:9-52:63
+	android:screenOrientation
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:43:13-49
+		REJECTED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:49:13-56
+	android:clearTaskOnLaunch
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:48:13-45
+	android:stateNotNeeded
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:50:13-42
+	android:windowSoftInputMode
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:52:13-60
+	android:theme
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:51:13-54
+	tools:replace
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:44:13-46
+	android:name
+		ADDED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml:42:13-74
+uses-sdk
+INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.taobao.android:weex_sdk:0.16.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.16.0/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:design:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/transition/26.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.taobao.android:weex_inspector:0.10.0.5] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_inspector/0.10.0.5/AndroidManifest.xml:8:5-11:60
+MERGED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:19:5-43
+MERGED from [com.android.support:support-v4:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.1.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.1.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.1.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.1.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.1.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/AndroidManifest.xml:21:5-23:58
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.0/AndroidManifest.xml:20:5-22:41
+MERGED from [com.taobao.android:weexplugin-loader:1.3] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weexplugin-loader/1.3/AndroidManifest.xml:5:5-7:41
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/src/main/AndroidManifest.xml
+receiver#com.taobao.weex.WXGlobalEventReceiver
+ADDED from [com.taobao.android:weex_sdk:0.16.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.16.0/AndroidManifest.xml:30:9-34:20
+	android:enabled
+		ADDED from [com.taobao.android:weex_sdk:0.16.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.16.0/AndroidManifest.xml:32:13-35
+	android:exported
+		ADDED from [com.taobao.android:weex_sdk:0.16.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.16.0/AndroidManifest.xml:33:13-37
+	android:name
+		ADDED from [com.taobao.android:weex_sdk:0.16.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.taobao.android/weex_sdk/0.16.0/AndroidManifest.xml:31:13-65
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/26.1.0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/26.1.0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/26.1.0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/26.1.0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/transition/26.1.0/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-v4/26.1.0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/26.1.0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-fragment/26.1.0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/26.1.0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/26.1.0/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/support-compat/26.1.0/AndroidManifest.xml:26:9-28:38
+	android:value
+		ADDED from [com.android.support:design:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/AndroidManifest.xml:28:13-35
+	android:name
+		ADDED from [com.android.support:design:26.1.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.android.support/design/26.1.0/AndroidManifest.xml:27:13-51
+uses-feature#android.hardware.camera.front
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:27:5-29:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:29:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:28:9-53
+uses-feature#android.hardware.camera.flash
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:35:5-37:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:37:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:36:9-53
+uses-feature#android.hardware.screen.landscape
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:38:5-40:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:40:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:39:9-57
+uses-feature#android.hardware.wifi
+ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:41:5-43:36
+	android:required
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:43:9-33
+	android:name
+		ADDED from [com.journeyapps:zxing-android-embedded:3.4.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/com.journeyapps/zxing-android-embedded/3.4.0/AndroidManifest.xml:42:9-45
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.0/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.0/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/zwwill/workspace/dev/github/weex-pro/yanxuan-weex-demo/platforms/android/app/build/intermediates/exploded-aar/android.arch.lifecycle/runtime/1.0.0/AndroidManifest.xml:26:13-58

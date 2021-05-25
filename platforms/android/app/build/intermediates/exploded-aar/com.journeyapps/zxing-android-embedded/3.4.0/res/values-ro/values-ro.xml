@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="zxing_app_name">Barcode Scanner</string>
+    <string name="zxing_button_ok">Acceptă</string>
+    <string name="zxing_msg_camera_framework_bug">Probleme cu camera foto. Repornește dispozitivul.</string>
+    <string name="zxing_msg_default_status">Plasează codul de bare în interiorul vizorului pentru a-l scana</string>
+</resources>

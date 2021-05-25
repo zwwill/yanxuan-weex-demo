@@ -29,8 +29,10 @@ lauch.json
 
 #nei
 /mock/
-/plugins/*
-/platforms/*
+#/plugins/*
+#/platforms/*
 /dist/
 /temp/
 assets/tools/
+
+package-lock.json
